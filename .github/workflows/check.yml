@@ -1,0 +1,35 @@
+name: Check dotfiles
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install static checkers
+        run: brew install gitleaks shellcheck
+      - name: Static checks and secret scan
+        run: ./script/check
+      - name: Link backup and idempotency
+        run: |
+          test_home="$(mktemp -d)"
+          mkdir -p "$test_home/.config"
+          printf 'existing configuration\n' > "$test_home/.gitconfig"
+          HOME="$test_home" DOTFILES_BACKUP_DIR="$test_home/backups" ./script/dot link
+          HOME="$test_home" DOTFILES_BACKUP_DIR="$test_home/backups" ./script/dot link
+          test -L "$test_home/.gitconfig"
+          test -f "$test_home/backups/.gitconfig"
+          HOME="$test_home" DOTFILES_BACKUP_DIR="$test_home/backups" ./script/dot sync --to-machine --yes
+          test -f "$test_home/.codex/config.toml"
+      - name: Non-mutating management previews
+        run: |
+          HOME="$(mktemp -d)" ./script/dot packages --dry-run
+          HOME="$(mktemp -d)" ./script/dot runtimes --dry-run
+          HOME="$(mktemp -d)" ./script/dot plugins --dry-run
+          HOME="$(mktemp -d)" ./script/dot macos --dry-run

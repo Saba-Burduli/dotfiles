@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+
+# Reviewed preferences only. This never changes system policy, permissions, or
+# default applications. Run without --yes to inspect the exact proposed values.
+set -euo pipefail
+
+APPLY=0
+DRY_RUN=0
+BACKUP_DIR="${DOTFILES_BACKUP_DIR:-$HOME/.dotfiles-backup/$(date +%Y%m%d-%H%M%S)}/macos"
+
+usage() {
+  cat <<'USAGE'
+Usage: script/macos [--dry-run] [--yes]
+
+Without --yes, show current and desired defaults without changing anything.
+With --yes, export every affected defaults domain, write the reviewed values,
+and restart Finder and Dock.
+USAGE
+}
+
+for argument in "$@"; do
+  case "$argument" in
+    --dry-run) DRY_RUN=1 ;;
+    --yes) APPLY=1 ;;
+    -h|--help) usage; exit 0 ;;
+    *) printf 'Unknown option: %s\n' "$argument" >&2; exit 2 ;;
+  esac
+done
+
+read_value() {
+  local domain="$1" key="$2" value
+  value="$(defaults read "$domain" "$key" 2>/dev/null || true)"
+  if [[ -z "$value" ]]; then printf '<unset>'; else printf '%s' "$value"; fi
+}
+
+preview() {
+  local domain="$1" key="$2" type="$3" desired="$4"
+  printf '%-34s %-36s current=%-12s desired=%s\n' "$domain" "$key" "$(read_value "$domain" "$key")" "$desired"
+}
+
+# domain<TAB>key<TAB>defaults type<TAB>desired value
+PREFERENCES=(
+  'com.apple.dock|tilesize|int|42'
+  'com.apple.dock|show-recents|bool|false'
+  'com.apple.dock|autohide|bool|false'
+  'com.apple.finder|FXPreferredViewStyle|string|icnv'
+  'com.apple.finder|AppleShowAllExtensions|bool|true'
+  'com.apple.finder|AppleShowAllFiles|bool|true'
+  'com.apple.finder|ShowPathbar|bool|true'
+  'com.apple.finder|ShowStatusBar|bool|true'
+  'com.apple.finder|_FXShowPosixPathInTitle|bool|true'
+  'NSGlobalDomain|KeyRepeat|int|2'
+  'NSGlobalDomain|InitialKeyRepeat|int|15'
+  'NSGlobalDomain|ApplePressAndHoldEnabled|bool|false'
+  'NSGlobalDomain|NSAutomaticCapitalizationEnabled|bool|false'
+  'NSGlobalDomain|NSAutomaticQuoteSubstitutionEnabled|bool|false'
+  'NSGlobalDomain|NSAutomaticDashSubstitutionEnabled|bool|false'
+  'NSGlobalDomain|NSAutomaticPeriodSubstitutionEnabled|bool|false'
+  'NSGlobalDomain|NSAutomaticSpellingCorrectionEnabled|bool|false'
+  'com.apple.desktopservices|DSDontWriteNetworkStores|bool|true'
+  'com.apple.desktopservices|DSDontWriteUSBStores|bool|true'
+)
+
+printf 'macOS preferences: current -> desired\n'
+for preference in "${PREFERENCES[@]}"; do
+  IFS='|' read -r domain key type desired <<< "$preference"
+  preview "$domain" "$key" "$type" "$desired"
+done
+
+if [[ "$APPLY" -eq 0 ]]; then
+  printf '\nPreview only. Re-run with --yes to export backups and apply these settings.\n'
+  exit 0
+fi
+
+if [[ "$DRY_RUN" -eq 1 ]]; then
+  printf '\nDry run complete; no defaults were written.\n'
+  exit 0
+fi
+
+mkdir -p "$BACKUP_DIR"
+for domain in com.apple.dock com.apple.finder NSGlobalDomain com.apple.desktopservices; do
+  target="$BACKUP_DIR/${domain//./_}.plist"
+  if defaults export "$domain" "$target" 2>/dev/null; then
+    printf 'backup   %s\n' "$target"
+  else
+    printf 'backup   %s (domain has no exportable values)\n' "$domain"
+  fi
+done
+
+for preference in "${PREFERENCES[@]}"; do
+  IFS='|' read -r domain key type desired <<< "$preference"
+  defaults write "$domain" "$key" "-$type" "$desired"
+  printf 'write    %s %s = %s\n' "$domain" "$key" "$desired"
+done
+
+killall Finder 2>/dev/null || true
+killall Dock 2>/dev/null || true
+printf '\nApplied reviewed macOS preferences. Finder and Dock were restarted.\n'

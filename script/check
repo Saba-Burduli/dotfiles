@@ -4,7 +4,13 @@ set -euo pipefail
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-bash -n "$DOTFILES_DIR/script/bootstrap" "$DOTFILES_DIR/script/dot"
+bash -n "$DOTFILES_DIR/script/bootstrap" "$DOTFILES_DIR/script/dot" "$DOTFILES_DIR/script/macos"
+
+if command -v shellcheck >/dev/null 2>&1; then
+  shellcheck "$DOTFILES_DIR/script/bootstrap" "$DOTFILES_DIR/script/dot" "$DOTFILES_DIR/script/macos"
+else
+  printf 'Skipping shellcheck; install it with `dot packages`.\n'
+fi
 
 for manifest in "$DOTFILES_DIR"/manifest/*.tsv; do
   awk -F '\t' 'NF && $1 !~ /^#/ && NF != 2 { exit 1 }' "$manifest" || {
@@ -12,6 +18,8 @@ for manifest in "$DOTFILES_DIR"/manifest/*.tsv; do
     exit 1
   }
 done
+
+ruby -c "$DOTFILES_DIR/Brewfile" >/dev/null
 
 while IFS=$'\t' read -r source relative_target; do
   [[ -z "$source" || "${source:0:1}" == '#' ]] && continue
@@ -33,6 +41,38 @@ done
 rg -Fqx 'brew "mise"' "$DOTFILES_DIR/Brewfile"
 rg -Fqx 'brew "shellcheck"' "$DOTFILES_DIR/Brewfile"
 rg -Fqx 'brew "gitleaks"' "$DOTFILES_DIR/Brewfile"
+
+while IFS=$'\t' read -r plugin state; do
+  [[ -z "$plugin" || "${plugin:0:1}" == '#' ]] && continue
+  expected=false
+  [[ "$state" == enabled ]] && expected=true
+  awk -v plugin="$plugin" -v expected="$expected" '
+    $0 == "[plugins.\"" plugin "\"]" { getline; if ($0 == "enabled = " expected) found=1 }
+    END { exit !found }
+  ' "$DOTFILES_DIR/config/codex/config.toml" || {
+    printf 'Codex plugin state missing from config: %s (%s)\n' "$plugin" "$state" >&2
+    exit 1
+  }
+done < "$DOTFILES_DIR/manifest/codex-plugins.tsv"
+
+for expected in \
+  'com.apple.dock|tilesize|int|42' \
+  'com.apple.dock|show-recents|bool|false' \
+  'com.apple.dock|autohide|bool|false' \
+  'com.apple.finder|FXPreferredViewStyle|string|icnv' \
+  'NSGlobalDomain|ApplePressAndHoldEnabled|bool|false' \
+  'com.apple.desktopservices|DSDontWriteUSBStores|bool|true'; do
+  rg -Fqx "  '$expected'" "$DOTFILES_DIR/script/macos" || {
+    printf 'Missing reviewed macOS preference: %s\n' "$expected" >&2
+    exit 1
+  }
+done
+
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks detect --no-git --source "$DOTFILES_DIR" --redact --no-banner
+else
+  printf 'Skipping gitleaks; install it with `dot packages`.\n'
+fi
 
 app_count="$({ find "$DOTFILES_DIR/keybindings" -maxdepth 1 -type f -name '*.md' ! -name README.md; } | wc -l | tr -d ' ')"
 binding_count="$(awk '/^\| `.*` \|/ { count++ } END { print count + 0 }' "$DOTFILES_DIR"/keybindings/*.md)"
