@@ -1,0 +1,6134 @@
+{
+  "categories" : [
+    {
+      "category" : "Blender",
+      "count" : 15
+    },
+    {
+      "category" : "Brave",
+      "count" : 29
+    },
+    {
+      "category" : "Chrome",
+      "count" : 29
+    },
+    {
+      "category" : "Cline",
+      "count" : 3
+    },
+    {
+      "category" : "Codex App",
+      "count" : 10
+    },
+    {
+      "category" : "Cursor",
+      "count" : 15
+    },
+    {
+      "category" : "Dia",
+      "count" : 4
+    },
+    {
+      "category" : "Firebase Studio",
+      "count" : 15
+    },
+    {
+      "category" : "Firefox",
+      "count" : 32
+    },
+    {
+      "category" : "GitHub Copilot",
+      "count" : 15
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "count" : 33
+    },
+    {
+      "category" : "JetBrains Junie",
+      "count" : 7
+    },
+    {
+      "category" : "macOS",
+      "count" : 20
+    },
+    {
+      "category" : "Obsidian",
+      "count" : 15
+    },
+    {
+      "category" : "Replit",
+      "count" : 15
+    },
+    {
+      "category" : "Terminal",
+      "count" : 23
+    },
+    {
+      "category" : "Unity",
+      "count" : 15
+    },
+    {
+      "category" : "Unreal Engine",
+      "count" : 15
+    },
+    {
+      "category" : "Vim / Nvim",
+      "count" : 26
+    },
+    {
+      "category" : "Visual Studio",
+      "count" : 32
+    },
+    {
+      "category" : "Warp",
+      "count" : 15
+    },
+    {
+      "category" : "Windsurf",
+      "count" : 12
+    },
+    {
+      "category" : "Xcode",
+      "count" : 34
+    },
+    {
+      "category" : "Zed",
+      "count" : 15
+    },
+    {
+      "category" : "Zed Agent",
+      "count" : 9
+    }
+  ],
+  "filter" : "kind == shortcut",
+  "shortcuts" : [
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Reopen parameters for the last action.",
+      "id" : "blender-adjust",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Adjust last operation",
+      "value" : "F9"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Delete selected objects with confirmation.",
+      "id" : "blender-delete",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Delete selection",
+      "value" : "X"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Move the selection.",
+      "id" : "blender-grab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Move",
+      "value" : "G"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Toggle maximization of the active area.",
+      "id" : "blender-maximize",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Maximize area",
+      "value" : "⌃ Space"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Open a blend file.",
+      "id" : "blender-open",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open file",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Open the Quick Favorites menu.",
+      "id" : "blender-quick",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Quick Favorites",
+      "value" : "Q"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Redo the last undone operation.",
+      "id" : "blender-redo",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Redo",
+      "value" : "⌘ ⇧ Z"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Rename the active item.",
+      "id" : "blender-rename",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Rename",
+      "value" : "F2"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Render the current frame.",
+      "id" : "blender-render",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Render frame",
+      "value" : "F12"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Show the render result window.",
+      "id" : "blender-render-view",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Show render",
+      "value" : "F11"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Rotate the selection.",
+      "id" : "blender-rotate",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Rotate",
+      "value" : "R"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Save the current blend file.",
+      "id" : "blender-save",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save file",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Scale the selection.",
+      "id" : "blender-scale",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Scale",
+      "value" : "S"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Search Blender operators and menus.",
+      "id" : "blender-search",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Operator search",
+      "value" : "F3"
+    },
+    {
+      "category" : "Blender",
+      "confidence" : "verified",
+      "description" : "Undo the last operation.",
+      "id" : "blender-undo",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Undo",
+      "value" : "⌘ Z"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Move focus to the address bar.",
+      "id" : "brave-address",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Focus address bar",
+      "value" : "⌘ L"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open the previous page in the current tab's history.",
+      "id" : "brave-back",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Go back",
+      "value" : "⌘ ["
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Bookmark the current page.",
+      "id" : "brave-bookmark",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Bookmark page",
+      "value" : "⌘ D"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Show or hide the bookmarks bar.",
+      "id" : "brave-bookmarks-bar",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle bookmarks bar",
+      "value" : "⌘ ⇧ B"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open browsing-data deletion controls.",
+      "id" : "brave-clear-data",
+      "kind" : "shortcut",
+      "tags" : [
+        "privacy"
+      ],
+      "title" : "Clear browsing data",
+      "value" : "⌘ ⇧ Delete"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Close the active browser tab.",
+      "id" : "brave-close-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close tab",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open developer tools directly to the JavaScript console.",
+      "id" : "brave-console",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "JavaScript"
+      ],
+      "title" : "Open JavaScript Console",
+      "value" : "⌘ ⌥ J"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open the browser developer tools.",
+      "id" : "brave-devtools",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer"
+      ],
+      "title" : "Open Developer Tools",
+      "value" : "⌘ ⌥ I"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open the browser downloads page.",
+      "id" : "brave-downloads",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open downloads",
+      "value" : "⌘ ⇧ J"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Search text on the current page.",
+      "id" : "brave-find",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Find in page",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Move to the next match in the Find bar.",
+      "id" : "brave-find-next",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Next find match",
+      "value" : "⌘ G"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Move to the previous match in the Find bar.",
+      "id" : "brave-find-previous",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Previous find match",
+      "value" : "⌘ ⇧ G"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open the next page in the current tab's history.",
+      "id" : "brave-forward",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Go forward",
+      "value" : "⌘ ]"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Reload the page while bypassing cached content.",
+      "id" : "brave-hard-reload",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "cache"
+      ],
+      "title" : "Reload without cache",
+      "value" : "⌘ ⇧ R"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open browsing history.",
+      "id" : "brave-history",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open history",
+      "value" : "⌘ Y"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Select the last open tab.",
+      "id" : "brave-last-tab",
+      "kind" : "shortcut",
+      "tags" : [
+        "tabs"
+      ],
+      "title" : "Jump to last tab",
+      "value" : "⌘ 9"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open a new browser tab.",
+      "id" : "brave-new-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New tab",
+      "value" : "⌘ T"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open a new browser window.",
+      "id" : "brave-new-window",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New window",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open a local file in the browser.",
+      "id" : "brave-open-file",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer"
+      ],
+      "title" : "Open local file",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Open a private browsing window.",
+      "id" : "brave-private-window",
+      "kind" : "shortcut",
+      "tags" : [
+        "privacy"
+      ],
+      "title" : "New private window",
+      "value" : "⌘ ⇧ N"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Reload the current page.",
+      "id" : "brave-reload",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Reload page",
+      "value" : "⌘ R"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Restore the most recently closed tab.",
+      "id" : "brave-reopen-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Reopen closed tab",
+      "value" : "⌘ ⇧ T"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Save the current webpage.",
+      "id" : "brave-save-page",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save page",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Display the current page's non-editable HTML source.",
+      "id" : "brave-source",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "HTML"
+      ],
+      "title" : "View page source",
+      "value" : "⌘ ⌥ U"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Move to the previous or next tab.",
+      "id" : "brave-switch-tabs",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Switch tabs",
+      "value" : "⌘ ⌥ ← / →"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Select a tab directly by its position.",
+      "id" : "brave-tab-number",
+      "kind" : "shortcut",
+      "tags" : [
+        "tabs"
+      ],
+      "title" : "Jump to tab 1–8",
+      "value" : "⌘ 1…8"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Increase page zoom.",
+      "id" : "brave-zoom-in",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Zoom in",
+      "value" : "⌘ +"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Decrease page zoom.",
+      "id" : "brave-zoom-out",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Zoom out",
+      "value" : "⌘ -"
+    },
+    {
+      "category" : "Brave",
+      "confidence" : "verified",
+      "description" : "Restore the default page zoom.",
+      "id" : "brave-zoom-reset",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Reset zoom",
+      "value" : "⌘ 0"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Move focus to the address bar.",
+      "id" : "chrome-address",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Focus address bar",
+      "value" : "⌘ L"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open the previous page in the current tab's history.",
+      "id" : "chrome-back",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Go back",
+      "value" : "⌘ ["
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Bookmark the current page.",
+      "id" : "chrome-bookmark",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Bookmark page",
+      "value" : "⌘ D"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Show or hide the bookmarks bar.",
+      "id" : "chrome-bookmarks-bar",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle bookmarks bar",
+      "value" : "⌘ ⇧ B"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open browsing-data deletion controls.",
+      "id" : "chrome-clear-data",
+      "kind" : "shortcut",
+      "tags" : [
+        "privacy"
+      ],
+      "title" : "Clear browsing data",
+      "value" : "⌘ ⇧ Delete"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Close the active browser tab.",
+      "id" : "chrome-close-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close tab",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open developer tools directly to the JavaScript console.",
+      "id" : "chrome-console",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "JavaScript"
+      ],
+      "title" : "Open JavaScript Console",
+      "value" : "⌘ ⌥ J"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open the browser developer tools.",
+      "id" : "chrome-devtools",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer"
+      ],
+      "title" : "Open Developer Tools",
+      "value" : "⌘ ⌥ I"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open the browser downloads page.",
+      "id" : "chrome-downloads",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open downloads",
+      "value" : "⌘ ⇧ J"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Search text on the current page.",
+      "id" : "chrome-find",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Find in page",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Move to the next match in the Find bar.",
+      "id" : "chrome-find-next",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Next find match",
+      "value" : "⌘ G"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Move to the previous match in the Find bar.",
+      "id" : "chrome-find-previous",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Previous find match",
+      "value" : "⌘ ⇧ G"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open the next page in the current tab's history.",
+      "id" : "chrome-forward",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Go forward",
+      "value" : "⌘ ]"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Reload the page while bypassing cached content.",
+      "id" : "chrome-hard-reload",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "cache"
+      ],
+      "title" : "Reload without cache",
+      "value" : "⌘ ⇧ R"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open browsing history.",
+      "id" : "chrome-history",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open history",
+      "value" : "⌘ Y"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Select the last open tab.",
+      "id" : "chrome-last-tab",
+      "kind" : "shortcut",
+      "tags" : [
+        "tabs"
+      ],
+      "title" : "Jump to last tab",
+      "value" : "⌘ 9"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open a new browser tab.",
+      "id" : "chrome-new-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New tab",
+      "value" : "⌘ T"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open a new browser window.",
+      "id" : "chrome-new-window",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New window",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open a local file in the browser.",
+      "id" : "chrome-open-file",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer"
+      ],
+      "title" : "Open local file",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Open a private browsing window.",
+      "id" : "chrome-private-window",
+      "kind" : "shortcut",
+      "tags" : [
+        "privacy"
+      ],
+      "title" : "New Incognito window",
+      "value" : "⌘ ⇧ N"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Reload the current page.",
+      "id" : "chrome-reload",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Reload page",
+      "value" : "⌘ R"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Restore the most recently closed tab.",
+      "id" : "chrome-reopen-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Reopen closed tab",
+      "value" : "⌘ ⇧ T"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Save the current webpage.",
+      "id" : "chrome-save-page",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save page",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Display the current page's non-editable HTML source.",
+      "id" : "chrome-source",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "HTML"
+      ],
+      "title" : "View page source",
+      "value" : "⌘ ⌥ U"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Move to the previous or next tab.",
+      "id" : "chrome-switch-tabs",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Switch tabs",
+      "value" : "⌘ ⌥ ← / →"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Select a tab directly by its position.",
+      "id" : "chrome-tab-number",
+      "kind" : "shortcut",
+      "tags" : [
+        "tabs"
+      ],
+      "title" : "Jump to tab 1–8",
+      "value" : "⌘ 1…8"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Increase page zoom.",
+      "id" : "chrome-zoom-in",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Zoom in",
+      "value" : "⌘ +"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Decrease page zoom.",
+      "id" : "chrome-zoom-out",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Zoom out",
+      "value" : "⌘ -"
+    },
+    {
+      "category" : "Chrome",
+      "confidence" : "verified",
+      "description" : "Restore the default page zoom.",
+      "id" : "chrome-zoom-reset",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Reset zoom",
+      "value" : "⌘ 0"
+    },
+    {
+      "category" : "Cline",
+      "confidence" : "verified",
+      "description" : "Find or manage the Cline extension.",
+      "id" : "cline-extensions",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Extensions",
+      "value" : "⌘ ⇧ X"
+    },
+    {
+      "category" : "Cline",
+      "confidence" : "verified",
+      "description" : "Run Cline: Open In New Tab from the palette.",
+      "id" : "cline-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Cline in new tab",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Cline",
+      "confidence" : "verified",
+      "description" : "Assign shortcuts to Cline commands.",
+      "id" : "cline-shortcuts",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open keyboard shortcuts",
+      "value" : "⌘ K ⌘ S"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "common",
+      "description" : "Open the attachment picker.",
+      "id" : "codexapp-attach",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Attach file",
+      "value" : "⌘ ⇧ A"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Close the active app window.",
+      "id" : "codexapp-close",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close window",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Find text in the active thread.",
+      "id" : "codexapp-find",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Find in thread",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Enter or leave full-screen mode.",
+      "id" : "codexapp-fullscreen",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle full screen",
+      "value" : "⌃ ⌘ F"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Stop the active task.",
+      "id" : "codexapp-interrupt",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Interrupt task",
+      "value" : "Esc"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Start a new Codex thread.",
+      "id" : "codexapp-new",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New thread",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Insert a line without submitting.",
+      "id" : "codexapp-newline",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Insert newline",
+      "value" : "⇧ Enter"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Open a local workspace.",
+      "id" : "codexapp-open",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open project",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Open Codex app settings.",
+      "id" : "codexapp-settings",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open settings",
+      "value" : "⌘ ,"
+    },
+    {
+      "category" : "Codex App",
+      "confidence" : "verified",
+      "description" : "Send the current prompt.",
+      "id" : "codexapp-submit",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Submit prompt",
+      "value" : "Enter"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Accept the current Tab completion.",
+      "id" : "cursor-accept",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Accept suggestion",
+      "value" : "Tab"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Attach the selected code to Chat.",
+      "id" : "cursor-add-context",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Add selection to chat",
+      "value" : "⌘ ⇧ L"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Open Cursor Agent in the side panel.",
+      "id" : "cursor-agent",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Agent",
+      "value" : "⌘ I"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Open background agents.",
+      "id" : "cursor-background",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Background agents",
+      "value" : "⌘ E"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Open Cursor Chat.",
+      "id" : "cursor-chat",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Chat",
+      "value" : "⌘ L"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Open a full-file edit prompt.",
+      "id" : "cursor-full-file",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Full-file edit",
+      "value" : "⌘ ⇧ K"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Open the inline edit prompt.",
+      "id" : "cursor-inline",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Inline edit",
+      "value" : "⌘ K"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Open the Agent mode menu.",
+      "id" : "cursor-mode",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Choose mode",
+      "value" : "⌘ ."
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Cycle through available AI models.",
+      "id" : "cursor-model",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Cycle model",
+      "value" : "⌘ /"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Start a new chat while Chat has focus.",
+      "id" : "cursor-new-chat",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New chat",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Search and run editor actions.",
+      "id" : "cursor-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command palette",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Queue a follow-up prompt.",
+      "id" : "cursor-queue",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Queue prompt",
+      "value" : "⌘ Enter"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Open Cursor-specific settings.",
+      "id" : "cursor-settings",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Cursor settings",
+      "value" : "⌘ ⇧ J"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Send the current chat prompt.",
+      "id" : "cursor-submit",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Submit prompt",
+      "value" : "Enter"
+    },
+    {
+      "category" : "Cursor",
+      "confidence" : "verified",
+      "description" : "Open the terminal prompt when Terminal has focus.",
+      "id" : "cursor-terminal",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Generate in terminal",
+      "value" : "⌘ K"
+    },
+    {
+      "category" : "Dia",
+      "confidence" : "common",
+      "description" : "Common browser shortcut; verify against your installed Dia version.",
+      "id" : "dia-address",
+      "kind" : "shortcut",
+      "tags" : [
+        "common browser shortcut"
+      ],
+      "title" : "Focus address bar",
+      "value" : "⌘ L"
+    },
+    {
+      "category" : "Dia",
+      "confidence" : "common",
+      "description" : "Common browser shortcut; verify against your installed Dia version.",
+      "id" : "dia-close-tab",
+      "kind" : "shortcut",
+      "tags" : [
+        "common browser shortcut"
+      ],
+      "title" : "Close tab",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Dia",
+      "confidence" : "common",
+      "description" : "Common browser shortcut; verify against your installed Dia version.",
+      "id" : "dia-find",
+      "kind" : "shortcut",
+      "tags" : [
+        "common browser shortcut"
+      ],
+      "title" : "Find in page",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Dia",
+      "confidence" : "common",
+      "description" : "Common browser shortcut; verify against your installed Dia version.",
+      "id" : "dia-new-tab",
+      "kind" : "shortcut",
+      "tags" : [
+        "common browser shortcut"
+      ],
+      "title" : "New tab",
+      "value" : "⌘ T"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Close the active editor.",
+      "id" : "firebase-close",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close editor",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Navigate to a symbol definition.",
+      "id" : "firebase-definition",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Go to definition",
+      "value" : "F12"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Find text in the active editor.",
+      "id" : "firebase-find",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Find",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "common",
+      "description" : "Open Gemini assistance in Firebase Studio.",
+      "id" : "firebase-gemini",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Gemini",
+      "value" : "⌘ ⇧ Space"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Create a new file.",
+      "id" : "firebase-new",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New file",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Search and run workspace actions.",
+      "id" : "firebase-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command palette",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "common",
+      "description" : "Use the command palette to open a web preview.",
+      "id" : "firebase-preview",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open preview",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Open a file by name.",
+      "id" : "firebase-quick-open",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Quick open",
+      "value" : "⌘ P"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Rename the selected symbol.",
+      "id" : "firebase-rename",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Rename symbol",
+      "value" : "F2"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Find and replace in the active editor.",
+      "id" : "firebase-replace",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Replace",
+      "value" : "⌘ ⌥ F"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Save the active file.",
+      "id" : "firebase-save",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Search across workspace files.",
+      "id" : "firebase-search",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Workspace search",
+      "value" : "⌘ ⇧ F"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Open workspace settings.",
+      "id" : "firebase-settings",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open settings",
+      "value" : "⌘ ,"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Show or hide the integrated terminal.",
+      "id" : "firebase-terminal",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle terminal",
+      "value" : "⌃ `"
+    },
+    {
+      "category" : "Firebase Studio",
+      "confidence" : "verified",
+      "description" : "Show or hide the integrated terminal.",
+      "id" : "firebase-terminal-extra",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle terminal",
+      "value" : "⌃ `"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Move focus to the address bar.",
+      "id" : "firefox-address",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Focus address bar",
+      "value" : "⌘ L"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open the previous page in the current tab's history.",
+      "id" : "firefox-back",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Go back",
+      "value" : "⌘ ["
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Bookmark the current page.",
+      "id" : "firefox-bookmark",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Bookmark page",
+      "value" : "⌘ D"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open controls for clearing recent browsing history.",
+      "id" : "firefox-clear-history",
+      "kind" : "shortcut",
+      "tags" : [
+        "privacy"
+      ],
+      "title" : "Clear recent history",
+      "value" : "⌘ ⇧ Delete"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Close the active browser tab.",
+      "id" : "firefox-close-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close tab",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open developer tools directly to the Web Console.",
+      "id" : "firefox-console",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "JavaScript"
+      ],
+      "title" : "Open Web Console",
+      "value" : "⌘ ⌥ K"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open Firefox developer tools.",
+      "id" : "firefox-devtools",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer"
+      ],
+      "title" : "Open Developer Tools",
+      "value" : "⌘ ⌥ I"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open the Downloads panel.",
+      "id" : "firefox-downloads",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open downloads",
+      "value" : "⌘ J"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Search text on the current page.",
+      "id" : "firefox-find",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Find in page",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Move to the next match in the Find bar.",
+      "id" : "firefox-find-next",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Next find match",
+      "value" : "⌘ G"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Move to the previous match in the Find bar.",
+      "id" : "firefox-find-previous",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Previous find match",
+      "value" : "⌘ ⇧ G"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open the next page in the current tab's history.",
+      "id" : "firefox-forward",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Go forward",
+      "value" : "⌘ ]"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Reload the page while bypassing cached content.",
+      "id" : "firefox-hard-reload",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "cache"
+      ],
+      "title" : "Reload without cache",
+      "value" : "⌘ ⇧ R"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open Firefox browsing history.",
+      "id" : "firefox-history",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open history",
+      "value" : "⌘ ⇧ H"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Inspect and edit page HTML and CSS.",
+      "id" : "firefox-inspector",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "HTML",
+        "CSS"
+      ],
+      "title" : "Open Inspector",
+      "value" : "⌘ ⌥ C"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Select the last open tab.",
+      "id" : "firefox-last-tab",
+      "kind" : "shortcut",
+      "tags" : [
+        "tabs"
+      ],
+      "title" : "Jump to last tab",
+      "value" : "⌘ 9"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Inspect requests made by the current page.",
+      "id" : "firefox-network",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "network"
+      ],
+      "title" : "Open Network Monitor",
+      "value" : "⌘ ⌥ E"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open a new browser tab.",
+      "id" : "firefox-new-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New tab",
+      "value" : "⌘ T"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open a new browser window.",
+      "id" : "firefox-new-window",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New window",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open a local file in the browser.",
+      "id" : "firefox-open-file",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer"
+      ],
+      "title" : "Open local file",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open a private browsing window.",
+      "id" : "firefox-private-window",
+      "kind" : "shortcut",
+      "tags" : [
+        "privacy"
+      ],
+      "title" : "New private window",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Reload the current page.",
+      "id" : "firefox-reload",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Reload page",
+      "value" : "⌘ R"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Restore the most recently closed tab.",
+      "id" : "firefox-reopen-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Reopen closed tab",
+      "value" : "⌘ ⇧ T"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Test the page at responsive viewport sizes.",
+      "id" : "firefox-responsive",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "responsive"
+      ],
+      "title" : "Responsive Design View",
+      "value" : "⌘ ⌥ M"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Save the current webpage.",
+      "id" : "firefox-save-page",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save page",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Open Firefox's webpage screenshot tool.",
+      "id" : "firefox-screenshot",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Take page screenshot",
+      "value" : "⌘ ⇧ S"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Display the current page's source.",
+      "id" : "firefox-source",
+      "kind" : "shortcut",
+      "tags" : [
+        "developer",
+        "HTML"
+      ],
+      "title" : "View page source",
+      "value" : "⌘ U"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Move to the previous or next tab.",
+      "id" : "firefox-switch-tabs",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Switch tabs",
+      "value" : "⌘ ⌥ ← / →"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Select a tab directly by its position.",
+      "id" : "firefox-tab-number",
+      "kind" : "shortcut",
+      "tags" : [
+        "tabs"
+      ],
+      "title" : "Jump to tab 1–8",
+      "value" : "⌘ 1…8"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Increase page zoom.",
+      "id" : "firefox-zoom-in",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Zoom in",
+      "value" : "⌘ +"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Decrease page zoom.",
+      "id" : "firefox-zoom-out",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Zoom out",
+      "value" : "⌘ -"
+    },
+    {
+      "category" : "Firefox",
+      "confidence" : "verified",
+      "description" : "Restore the default page zoom.",
+      "id" : "firefox-zoom-reset",
+      "kind" : "shortcut",
+      "tags" : [
+        "accessibility"
+      ],
+      "title" : "Reset zoom",
+      "value" : "⌘ 0"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Accept an inline completion.",
+      "id" : "copilot-accept",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Accept suggestion",
+      "value" : "Tab"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Open a new Copilot agent session.",
+      "id" : "copilot-agent",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Agent",
+      "value" : "⌘ ⇧ I"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Open the agent picker in Chat.",
+      "id" : "copilot-agents",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Choose agent",
+      "value" : "⌘ ."
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Open GitHub Copilot Chat in VS Code on macOS.",
+      "id" : "copilot-chat",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Chat",
+      "value" : "⌃ ⌘ I"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Dismiss the current inline completion.",
+      "id" : "copilot-dismiss",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Dismiss suggestion",
+      "value" : "Esc"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Open Copilot Inline Chat in the editor.",
+      "id" : "copilot-inline",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Inline Chat",
+      "value" : "⌘ I"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Open the language-model picker.",
+      "id" : "copilot-model",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Choose model",
+      "value" : "⌘ ⌥ ."
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Start a new chat while Chat has focus.",
+      "id" : "copilot-new",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New chat",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Show the next inline suggestion.",
+      "id" : "copilot-next",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Next suggestion",
+      "value" : "⌥ ]"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Search for all GitHub Copilot commands.",
+      "id" : "copilot-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command palette",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Show the previous inline suggestion.",
+      "id" : "copilot-previous",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Previous suggestion",
+      "value" : "⌥ ["
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Open the lightweight Quick Chat control.",
+      "id" : "copilot-quick",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Quick Chat",
+      "value" : "⌘ ⌥ ⇧ L"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Open Copilot Inline Chat in the terminal.",
+      "id" : "copilot-terminal",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Terminal Inline Chat",
+      "value" : "⌘ I"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Start voice input when the Chat input has focus.",
+      "id" : "copilot-voice",
+      "kind" : "shortcut",
+      "tags" : [
+        "context dependent"
+      ],
+      "title" : "Start voice chat",
+      "value" : "⌘ I"
+    },
+    {
+      "category" : "GitHub Copilot",
+      "confidence" : "verified",
+      "description" : "Accept the next word of an inline suggestion.",
+      "id" : "copilot-word",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Accept next word",
+      "value" : "⌘ →"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Comment or uncomment a block selection.",
+      "id" : "jetbrains-block-comment",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "editing"
+      ],
+      "title" : "Toggle block comment",
+      "value" : "⌘ ⌥ /"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Open the Breakpoints dialog.",
+      "id" : "jetbrains-breakpoints",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "debug"
+      ],
+      "title" : "View breakpoints",
+      "value" : "⌘ ⇧ F8"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Build the current project.",
+      "id" : "jetbrains-build",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "build"
+      ],
+      "title" : "Build project",
+      "value" : "⌘ F9"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Search for and open a class.",
+      "id" : "jetbrains-class",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "navigation"
+      ],
+      "title" : "Go to class",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Complete the current statement and position the caret.",
+      "id" : "jetbrains-complete-statement",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "editing"
+      ],
+      "title" : "Complete statement",
+      "value" : "⌘ ⇧ Enter"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Show context-aware code-completion suggestions.",
+      "id" : "jetbrains-completion",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "completion"
+      ],
+      "title" : "Basic completion",
+      "value" : "⌃ Space"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Debug the selected configuration.",
+      "id" : "jetbrains-debug",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "debug"
+      ],
+      "title" : "Debug",
+      "value" : "⌃ D"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Navigate to a symbol's declaration.",
+      "id" : "jetbrains-declaration",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "navigation"
+      ],
+      "title" : "Go to declaration",
+      "value" : "⌘ B"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Expand selection to the next enclosing code construct.",
+      "id" : "jetbrains-extend-selection",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "selection"
+      ],
+      "title" : "Extend selection",
+      "value" : "⌥ ↑"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Search for and open a file.",
+      "id" : "jetbrains-file",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "navigation"
+      ],
+      "title" : "Go to file",
+      "value" : "⌘ ⇧ O"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Search for and run any IDE action.",
+      "id" : "jetbrains-find-action",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "search"
+      ],
+      "title" : "Find Action",
+      "value" : "⌘ ⇧ A"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Find usages of the symbol under the caret.",
+      "id" : "jetbrains-find-usages",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "navigation"
+      ],
+      "title" : "Find usages",
+      "value" : "⌥ F7"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Open code-generation actions for the current context.",
+      "id" : "jetbrains-generate",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "code"
+      ],
+      "title" : "Generate code",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Navigate to an implementation of the selected symbol.",
+      "id" : "jetbrains-implementation",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "navigation"
+      ],
+      "title" : "Go to implementation",
+      "value" : "⌘ ⌥ B"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Show quick fixes and context actions.",
+      "id" : "jetbrains-intention",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "quick fix"
+      ],
+      "title" : "Show intention actions",
+      "value" : "⌥ Enter"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Comment or uncomment the current line or selection.",
+      "id" : "jetbrains-line-comment",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "editing"
+      ],
+      "title" : "Toggle line comment",
+      "value" : "⌘ /"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Move to the next highlighted code issue.",
+      "id" : "jetbrains-next-error",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "diagnostics"
+      ],
+      "title" : "Next highlighted error",
+      "value" : "F2"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Move to the previous highlighted code issue.",
+      "id" : "jetbrains-previous-error",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "diagnostics"
+      ],
+      "title" : "Previous highlighted error",
+      "value" : "⇧ F2"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Focus the Project tool window.",
+      "id" : "jetbrains-project-window",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "tool window"
+      ],
+      "title" : "Show Project window",
+      "value" : "⌘ 1"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Rebuild the current project from scratch.",
+      "id" : "jetbrains-rebuild",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "build"
+      ],
+      "title" : "Rebuild project",
+      "value" : "⌘ ⇧ F9"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Open the recent-files popup.",
+      "id" : "jetbrains-recent-files",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "navigation"
+      ],
+      "title" : "Recent files",
+      "value" : "⌘ E"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Open refactorings available for the selected symbol.",
+      "id" : "jetbrains-refactor",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "refactor"
+      ],
+      "title" : "Refactor This",
+      "value" : "⌃ T"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Reformat the current file or selection.",
+      "id" : "jetbrains-reformat",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "format"
+      ],
+      "title" : "Reformat code",
+      "value" : "⌘ ⌥ L"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Rename the selected symbol safely across the project.",
+      "id" : "jetbrains-rename",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "refactor"
+      ],
+      "title" : "Rename",
+      "value" : "⇧ F6"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Run the selected configuration.",
+      "id" : "jetbrains-run",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "run"
+      ],
+      "title" : "Run",
+      "value" : "⌃ R"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Run commands, configurations, and project targets.",
+      "id" : "jetbrains-run-anything",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "run"
+      ],
+      "title" : "Run Anything",
+      "value" : "⌃ ⌃"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Find files, actions, symbols, settings, and VCS items.",
+      "id" : "jetbrains-search-everywhere",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "search"
+      ],
+      "title" : "Search Everywhere",
+      "value" : "⇧ ⇧"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Select the current file in another view.",
+      "id" : "jetbrains-select-in",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "navigation"
+      ],
+      "title" : "Select In",
+      "value" : "⌥ F1"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Open IDE settings.",
+      "id" : "jetbrains-settings",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap"
+      ],
+      "title" : "Open settings",
+      "value" : "⌘ ,"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Reduce structural selection to the previous scope.",
+      "id" : "jetbrains-shrink-selection",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "selection"
+      ],
+      "title" : "Shrink selection",
+      "value" : "⌥ ↓"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Filter completion suggestions by the expected type.",
+      "id" : "jetbrains-smart-completion",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "completion"
+      ],
+      "title" : "Smart completion",
+      "value" : "⌃ ⇧ Space"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Search for and navigate to a symbol.",
+      "id" : "jetbrains-symbol",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "navigation"
+      ],
+      "title" : "Go to symbol",
+      "value" : "⌘ ⌥ O"
+    },
+    {
+      "category" : "JetBrains IDEs",
+      "confidence" : "verified",
+      "description" : "Open the version-control operations popup.",
+      "id" : "jetbrains-vcs-popup",
+      "kind" : "shortcut",
+      "tags" : [
+        "IntelliJ IDEA",
+        "PyCharm",
+        "WebStorm",
+        "PhpStorm",
+        "CLion",
+        "GoLand",
+        "Rider",
+        "RubyMine",
+        "DataGrip",
+        "DataSpell",
+        "RustRover",
+        "MPS",
+        "Writerside",
+        "Android Studio",
+        "macOS keymap",
+        "git",
+        "VCS"
+      ],
+      "title" : "VCS operations",
+      "value" : "⌃ V"
+    },
+    {
+      "category" : "JetBrains Junie",
+      "confidence" : "verified",
+      "description" : "Cycle command approval levels.",
+      "id" : "junie-brave",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Cycle Brave mode",
+      "value" : "⌃ B"
+    },
+    {
+      "category" : "JetBrains Junie",
+      "confidence" : "verified",
+      "description" : "Search for a file or folder to attach.",
+      "id" : "junie-files",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Attach file",
+      "value" : "@"
+    },
+    {
+      "category" : "JetBrains Junie",
+      "confidence" : "verified",
+      "description" : "Open Junie CLI help.",
+      "id" : "junie-help",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Show shortcuts",
+      "value" : "?"
+    },
+    {
+      "category" : "JetBrains Junie",
+      "confidence" : "verified",
+      "description" : "Search previous prompts.",
+      "id" : "junie-history",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Search prompt history",
+      "value" : "⌃ R"
+    },
+    {
+      "category" : "JetBrains Junie",
+      "confidence" : "verified",
+      "description" : "Switch between default and plan mode.",
+      "id" : "junie-plan",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle plan mode",
+      "value" : "⇧ Tab"
+    },
+    {
+      "category" : "JetBrains Junie",
+      "confidence" : "verified",
+      "description" : "Run a shell command from the prompt.",
+      "id" : "junie-shell",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Run shell command",
+      "value" : "!"
+    },
+    {
+      "category" : "JetBrains Junie",
+      "confidence" : "verified",
+      "description" : "Open the full session transcript.",
+      "id" : "junie-transcript",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open transcript",
+      "value" : "⌃ T"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Move through windows belonging to the active app.",
+      "id" : "macos-app-windows",
+      "kind" : "shortcut",
+      "tags" : [
+        "windows"
+      ],
+      "title" : "Switch app windows",
+      "value" : "⌘ `"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Close the active window.",
+      "id" : "macos-close",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close window",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Copy the full pathname of selected Finder items.",
+      "id" : "macos-copy-path",
+      "kind" : "shortcut",
+      "tags" : [
+        "Finder",
+        "path"
+      ],
+      "title" : "Copy file pathname",
+      "value" : "⌘ ⌥ C"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Delete the word to the left of the insertion point.",
+      "id" : "macos-delete-word",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Delete previous word",
+      "value" : "⌥ Delete"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Open emoji, symbols, and special characters.",
+      "id" : "macos-emoji",
+      "kind" : "shortcut",
+      "tags" : [
+        "symbols"
+      ],
+      "title" : "Character Viewer",
+      "value" : "⌘ ⌃ Space"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Create a new folder in Finder.",
+      "id" : "macos-finder-folder",
+      "kind" : "shortcut",
+      "tags" : [
+        "Finder"
+      ],
+      "title" : "New Finder folder",
+      "value" : "⌘ ⇧ N"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Open the Force Quit Applications window.",
+      "id" : "macos-force-quit",
+      "kind" : "shortcut",
+      "tags" : [
+        "system"
+      ],
+      "title" : "Force Quit",
+      "value" : "⌘ ⌥ Esc"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Delete the character to the right of the insertion point.",
+      "id" : "macos-forward-delete",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Forward delete",
+      "value" : "Fn Delete"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Enter or leave full-screen mode in supported apps.",
+      "id" : "macos-full-screen",
+      "kind" : "shortcut",
+      "tags" : [
+        "windows"
+      ],
+      "title" : "Toggle full screen",
+      "value" : "⌘ ⌃ F"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Open Finder's Go to Folder sheet and enter a path.",
+      "id" : "macos-go-folder",
+      "kind" : "shortcut",
+      "tags" : [
+        "Finder",
+        "path"
+      ],
+      "title" : "Go to folder",
+      "value" : "⌘ ⇧ G"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Show or hide hidden files in Finder and file dialogs.",
+      "id" : "macos-hidden-files",
+      "kind" : "shortcut",
+      "tags" : [
+        "Finder",
+        "dotfiles"
+      ],
+      "title" : "Toggle hidden files",
+      "value" : "⌘ ⇧ ."
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Hide all windows for the active app.",
+      "id" : "macos-hide",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Hide current app",
+      "value" : "⌘ H"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Lock the Mac immediately.",
+      "id" : "macos-lock",
+      "kind" : "shortcut",
+      "tags" : [
+        "security"
+      ],
+      "title" : "Lock screen",
+      "value" : "⌘ ⌃ Q"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Minimize the active window to the Dock.",
+      "id" : "macos-minimize",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Minimize window",
+      "value" : "⌘ M"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Preview the selected Finder item without opening it.",
+      "id" : "macos-quick-look",
+      "kind" : "shortcut",
+      "tags" : [
+        "Finder",
+        "preview"
+      ],
+      "title" : "Quick Look",
+      "value" : "Space"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Quit the active application.",
+      "id" : "macos-quit",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Quit app",
+      "value" : "⌘ Q"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Open screenshot and screen recording tools.",
+      "id" : "macos-screenshot",
+      "kind" : "shortcut",
+      "tags" : [
+        "screen",
+        "recording"
+      ],
+      "title" : "Capture screen",
+      "value" : "⌘ ⇧ 5"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Open settings for the active application.",
+      "id" : "macos-settings",
+      "kind" : "shortcut",
+      "tags" : [
+        "preferences"
+      ],
+      "title" : "Open app settings",
+      "value" : "⌘ ,"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Search apps, files, and actions.",
+      "id" : "macos-spotlight",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Open Spotlight",
+      "value" : "⌘ Space"
+    },
+    {
+      "category" : "macOS",
+      "confidence" : "verified",
+      "description" : "Move between open applications.",
+      "id" : "macos-switch-apps",
+      "kind" : "shortcut",
+      "tags" : [
+        "apps"
+      ],
+      "title" : "Switch apps",
+      "value" : "⌘ Tab"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Go to the previous note in history.",
+      "id" : "obsidian-back",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Navigate back",
+      "value" : "⌘ ⌥ ←"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Toggle bold formatting.",
+      "id" : "obsidian-bold",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle bold",
+      "value" : "⌘ B"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Close the active tab.",
+      "id" : "obsidian-close",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close tab",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "common",
+      "description" : "Delete the current paragraph.",
+      "id" : "obsidian-delete",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Delete paragraph",
+      "value" : "⌘ ⇧ K"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Go to the next note in history.",
+      "id" : "obsidian-forward",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Navigate forward",
+      "value" : "⌘ ⌥ →"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Toggle italic formatting.",
+      "id" : "obsidian-italic",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle italic",
+      "value" : "⌘ I"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Insert or edit a link.",
+      "id" : "obsidian-link",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Insert internal link",
+      "value" : "⌘ K"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Create a new note.",
+      "id" : "obsidian-new",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New note",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Open a new tab.",
+      "id" : "obsidian-new-tab",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New tab",
+      "value" : "⌘ T"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "common",
+      "description" : "Open the link under the cursor.",
+      "id" : "obsidian-open-link",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open link under cursor",
+      "value" : "⌥ Enter"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Open Obsidian's command palette.",
+      "id" : "obsidian-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command palette",
+      "value" : "⌘ P"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Find and open a note.",
+      "id" : "obsidian-quick",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Quick switcher",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "common",
+      "description" : "Switch editing and reading views.",
+      "id" : "obsidian-reading",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle reading view",
+      "value" : "⌘ E"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Search across the current vault.",
+      "id" : "obsidian-search",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Search vault",
+      "value" : "⌘ ⇧ F"
+    },
+    {
+      "category" : "Obsidian",
+      "confidence" : "verified",
+      "description" : "Open Obsidian settings.",
+      "id" : "obsidian-settings",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open settings",
+      "value" : "⌘ ,"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "common",
+      "description" : "Open Replit Agent.",
+      "id" : "replit-agent",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Agent",
+      "value" : "⌘ K"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Close the active editor.",
+      "id" : "replit-close",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close editor",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Navigate to a symbol definition.",
+      "id" : "replit-definition",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Go to definition",
+      "value" : "F12"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Find text in the active editor.",
+      "id" : "replit-find",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Find",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Create a new file.",
+      "id" : "replit-new",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New file",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Search and run workspace actions.",
+      "id" : "replit-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command palette",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Open a file by name.",
+      "id" : "replit-quick-open",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Quick open",
+      "value" : "⌘ P"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Rename the selected symbol.",
+      "id" : "replit-rename",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Rename symbol",
+      "value" : "F2"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Find and replace in the active editor.",
+      "id" : "replit-replace",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Replace",
+      "value" : "⌘ ⌥ F"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "common",
+      "description" : "Run the current Replit project.",
+      "id" : "replit-run",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Run project",
+      "value" : "⌘ Enter"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Save the active file.",
+      "id" : "replit-save",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Search across workspace files.",
+      "id" : "replit-search",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Workspace search",
+      "value" : "⌘ ⇧ F"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Open workspace settings.",
+      "id" : "replit-settings",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open settings",
+      "value" : "⌘ ,"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "common",
+      "description" : "Open the Shell tool.",
+      "id" : "replit-shell",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Shell",
+      "value" : "⌘ ⇧ S"
+    },
+    {
+      "category" : "Replit",
+      "confidence" : "verified",
+      "description" : "Show or hide the integrated terminal.",
+      "id" : "replit-terminal",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle terminal",
+      "value" : "⌃ `"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Clear the visible terminal screen.",
+      "id" : "terminal-clear",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Clear screen",
+      "value" : "⌃ L"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Clear the Terminal window's scrollback buffer.",
+      "id" : "terminal-clear-scrollback",
+      "kind" : "shortcut",
+      "tags" : [
+        "Terminal.app"
+      ],
+      "title" : "Clear scrollback",
+      "value" : "⌘ K"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Delete from the cursor to the end of the line.",
+      "id" : "terminal-delete-after",
+      "kind" : "shortcut",
+      "tags" : [
+        "shell"
+      ],
+      "title" : "Delete after cursor",
+      "value" : "⌃ K"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Delete from the cursor to the beginning of the line.",
+      "id" : "terminal-delete-before",
+      "kind" : "shortcut",
+      "tags" : [
+        "shell"
+      ],
+      "title" : "Delete before cursor",
+      "value" : "⌃ U"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Delete the word immediately before the cursor.",
+      "id" : "terminal-delete-word",
+      "kind" : "shortcut",
+      "tags" : [
+        "shell"
+      ],
+      "title" : "Delete previous word",
+      "value" : "⌃ W"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Send end-of-input; an idle shell commonly exits.",
+      "id" : "terminal-eof",
+      "kind" : "shortcut",
+      "tags" : [
+        "shell"
+      ],
+      "title" : "End input or exit",
+      "value" : "⌃ D"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Search text in the active Terminal window.",
+      "id" : "terminal-find",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Find terminal text",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Move to the next terminal search result.",
+      "id" : "terminal-find-next",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Find next match",
+      "value" : "⌘ G"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Move to the previous terminal search result.",
+      "id" : "terminal-find-previous",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Find previous match",
+      "value" : "⌘ ⇧ G"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Show Terminal's inspector for the selected tab.",
+      "id" : "terminal-inspector",
+      "kind" : "shortcut",
+      "tags" : [
+        "profile"
+      ],
+      "title" : "Show inspector",
+      "value" : "⌘ I"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Send an interrupt signal to the foreground process.",
+      "id" : "terminal-interrupt",
+      "kind" : "shortcut",
+      "tags" : [
+        "signal"
+      ],
+      "title" : "Interrupt command",
+      "value" : "⌃ C"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Move the cursor to the end of the current line.",
+      "id" : "terminal-line-end",
+      "kind" : "shortcut",
+      "tags" : [
+        "shell",
+        "readline"
+      ],
+      "title" : "End of line",
+      "value" : "⌃ E"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Move the cursor to the beginning of the current line.",
+      "id" : "terminal-line-start",
+      "kind" : "shortcut",
+      "tags" : [
+        "shell",
+        "readline"
+      ],
+      "title" : "Beginning of line",
+      "value" : "⌃ A"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Open a new tab in Terminal.",
+      "id" : "terminal-new-tab",
+      "kind" : "shortcut",
+      "tags" : [
+        "Terminal.app"
+      ],
+      "title" : "New terminal tab",
+      "value" : "⌘ T"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Open a tab running the same command as the active terminal.",
+      "id" : "terminal-new-tab-same",
+      "kind" : "shortcut",
+      "tags" : [
+        "Terminal.app"
+      ],
+      "title" : "New tab with same command",
+      "value" : "⌘ ⌃ T"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Open a new Terminal window.",
+      "id" : "terminal-new-window",
+      "kind" : "shortcut",
+      "tags" : [
+        "Terminal.app"
+      ],
+      "title" : "New terminal window",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Open a window running the same command as the active terminal.",
+      "id" : "terminal-new-window-same",
+      "kind" : "shortcut",
+      "tags" : [
+        "Terminal.app"
+      ],
+      "title" : "New window with same command",
+      "value" : "⌘ ⌃ N"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Select the next Terminal tab.",
+      "id" : "terminal-next-tab",
+      "kind" : "shortcut",
+      "tags" : [
+        "tabs"
+      ],
+      "title" : "Next tab",
+      "value" : "⌘ ⇧ ]"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Select the previous Terminal tab.",
+      "id" : "terminal-previous-tab",
+      "kind" : "shortcut",
+      "tags" : [
+        "tabs"
+      ],
+      "title" : "Previous tab",
+      "value" : "⌘ ⇧ ["
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Show or hide Terminal's tab bar.",
+      "id" : "terminal-show-tab-bar",
+      "kind" : "shortcut",
+      "tags" : [
+        "Terminal.app"
+      ],
+      "title" : "Toggle tab bar",
+      "value" : "⌘ ⇧ T"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Swap the two characters around the insertion point.",
+      "id" : "terminal-transpose",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Transpose characters",
+      "value" : "⌃ T"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Move the insertion point backward by one word.",
+      "id" : "terminal-word-backward",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Move backward one word",
+      "value" : "⌥ ←"
+    },
+    {
+      "category" : "Terminal",
+      "confidence" : "verified",
+      "description" : "Move the insertion point forward by one word.",
+      "id" : "terminal-word-forward",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Move forward one word",
+      "value" : "⌥ →"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Open or run the build workflow.",
+      "id" : "unity-build",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Build",
+      "value" : "⌘ ⇧ B"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Build the project and run it.",
+      "id" : "unity-build-run",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Build and run",
+      "value" : "⌘ B"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Open the Console window.",
+      "id" : "unity-console",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Console",
+      "value" : "⌘ ⇧ C"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Duplicate the selection.",
+      "id" : "unity-duplicate",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Duplicate",
+      "value" : "⌘ D"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Center the Scene view on the selection.",
+      "id" : "unity-frame",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Frame selection",
+      "value" : "F"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Activate the move tool.",
+      "id" : "unity-move",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Move tool",
+      "value" : "W"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Activate the hand/pan tool.",
+      "id" : "unity-pan",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Pan tool",
+      "value" : "Q"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Pause Play mode.",
+      "id" : "unity-pause",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Pause",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Enter or exit Play mode.",
+      "id" : "unity-play",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Play",
+      "value" : "⌘ P"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Focus the Project window.",
+      "id" : "unity-project",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Project window",
+      "value" : "⌘ 5"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Activate the rotate tool.",
+      "id" : "unity-rotate",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Rotate tool",
+      "value" : "E"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Save the active scene.",
+      "id" : "unity-save",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save scene",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Activate the scale tool.",
+      "id" : "unity-scale",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Scale tool",
+      "value" : "R"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Advance one frame while paused.",
+      "id" : "unity-step",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Step frame",
+      "value" : "⌘ ⌥ P"
+    },
+    {
+      "category" : "Unity",
+      "confidence" : "verified",
+      "description" : "Hold while moving to snap vertices.",
+      "id" : "unity-vertex",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Vertex snap",
+      "value" : "V"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Open or focus the Content Browser.",
+      "id" : "unreal-content",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Content Browser",
+      "value" : "⌃ Space"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Open documentation for the current editor context.",
+      "id" : "unreal-docs",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Context documentation",
+      "value" : "F1"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Duplicate selected actors.",
+      "id" : "unreal-duplicate",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Duplicate actor",
+      "value" : "⌃ W"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Frame selected actors in the viewport.",
+      "id" : "unreal-focus",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Focus selection",
+      "value" : "F"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Hide or show editor-only viewport icons.",
+      "id" : "unreal-game-view",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle game view",
+      "value" : "G"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Create a new level.",
+      "id" : "unreal-new",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New level",
+      "value" : "⌃ N"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Open an existing level.",
+      "id" : "unreal-open",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open level",
+      "value" : "⌃ O"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Start Play In Editor.",
+      "id" : "unreal-play",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Play in editor",
+      "value" : "⌥ P"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Activate rotation controls.",
+      "id" : "unreal-rotate",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Rotate tool",
+      "value" : "E"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Save the active level.",
+      "id" : "unreal-save",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save current level",
+      "value" : "⌃ S"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Save all modified assets and levels.",
+      "id" : "unreal-save-all",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save all",
+      "value" : "⌃ ⇧ S"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Activate scale controls.",
+      "id" : "unreal-scale",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Scale tool",
+      "value" : "R"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "common",
+      "description" : "Open action search.",
+      "id" : "unreal-search",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Search commands",
+      "value" : "⌃ ⇧ P"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Stop the active Play In Editor session.",
+      "id" : "unreal-stop",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Stop play session",
+      "value" : "Esc"
+    },
+    {
+      "category" : "Unreal Engine",
+      "confidence" : "verified",
+      "description" : "Activate translation controls.",
+      "id" : "unreal-translate",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Translate tool",
+      "value" : "W"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Enter Insert mode after the cursor.",
+      "id" : "vim-append",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Append after cursor",
+      "value" : "a"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Enter an Ex command on the command line.",
+      "id" : "vim-command",
+      "kind" : "shortcut",
+      "tags" : [
+        "mode"
+      ],
+      "title" : "Command-line mode",
+      "value" : ":"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Delete the current line into a register.",
+      "id" : "vim-delete-line",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing",
+        "register"
+      ],
+      "title" : "Delete line",
+      "value" : "dd"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move one line down in Normal mode.",
+      "id" : "vim-down",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "Move down",
+      "value" : "j"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move to the last line of the buffer.",
+      "id" : "vim-file-end",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "Last line",
+      "value" : "G"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move to the first line of the buffer.",
+      "id" : "vim-file-start",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "First line",
+      "value" : "gg"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move to the first non-blank character of the line.",
+      "id" : "vim-first-nonblank",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "First non-blank",
+      "value" : "^"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Open Neovim help for a command or topic.",
+      "id" : "vim-help",
+      "kind" : "shortcut",
+      "tags" : [
+        "help"
+      ],
+      "title" : "Open help",
+      "value" : ":help"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Enter Insert mode before the cursor.",
+      "id" : "vim-insert",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Insert before cursor",
+      "value" : "i"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move one character left in Normal mode.",
+      "id" : "vim-left",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "Move left",
+      "value" : "h"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move to the end of the line.",
+      "id" : "vim-line-end",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "End of line",
+      "value" : "$"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move to the first character of the line.",
+      "id" : "vim-line-start",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "Start of line",
+      "value" : "0"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Leave Insert, Visual, Search, or Command mode.",
+      "id" : "vim-normal",
+      "kind" : "shortcut",
+      "tags" : [
+        "mode"
+      ],
+      "title" : "Return to Normal mode",
+      "value" : "Esc"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Put register contents after the cursor or below the line.",
+      "id" : "vim-paste-after",
+      "kind" : "shortcut",
+      "tags" : [
+        "paste",
+        "register"
+      ],
+      "title" : "Put after cursor",
+      "value" : "p"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Redo a change that was undone.",
+      "id" : "vim-redo",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Redo",
+      "value" : "⌃ R"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move one character right in Normal mode.",
+      "id" : "vim-right",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "Move right",
+      "value" : "l"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Search forward for a pattern.",
+      "id" : "vim-search",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Search forward",
+      "value" : "/pattern"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Repeat the latest search in the same direction.",
+      "id" : "vim-search-next",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Next search result",
+      "value" : "n"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Repeat the latest search in the opposite direction.",
+      "id" : "vim-search-previous",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Previous search result",
+      "value" : "N"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Undo the latest change.",
+      "id" : "vim-undo",
+      "kind" : "shortcut",
+      "tags" : [
+        "editing"
+      ],
+      "title" : "Undo",
+      "value" : "u"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move one line up in Normal mode.",
+      "id" : "vim-up",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "Move up",
+      "value" : "k"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Start a characterwise visual selection.",
+      "id" : "vim-visual",
+      "kind" : "shortcut",
+      "tags" : [
+        "selection"
+      ],
+      "title" : "Visual character mode",
+      "value" : "v"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move to the start of the next word.",
+      "id" : "vim-word",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "Next word",
+      "value" : "w"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move to the start of the previous word.",
+      "id" : "vim-word-back",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "Previous word",
+      "value" : "b"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Move to the end of the current or next word.",
+      "id" : "vim-word-end",
+      "kind" : "shortcut",
+      "tags" : [
+        "motion"
+      ],
+      "title" : "End of word",
+      "value" : "e"
+    },
+    {
+      "category" : "Vim / Nvim",
+      "confidence" : "verified",
+      "description" : "Copy the current line into a register.",
+      "id" : "vim-yank-line",
+      "kind" : "shortcut",
+      "tags" : [
+        "copy",
+        "register"
+      ],
+      "title" : "Yank line",
+      "value" : "yy"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Build all projects in the current solution.",
+      "id" : "vs-build-solution",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "build"
+      ],
+      "title" : "Build solution",
+      "value" : "Ctrl+Shift+B"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Cancel the active build operation.",
+      "id" : "vs-cancel-build",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "build"
+      ],
+      "title" : "Cancel build",
+      "value" : "Ctrl+Break"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Close the active document tab.",
+      "id" : "vs-close-document",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "window"
+      ],
+      "title" : "Close active document",
+      "value" : "Ctrl+F4"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Comment the selected lines.",
+      "id" : "vs-comment",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "editing"
+      ],
+      "title" : "Comment selection",
+      "value" : "Ctrl+K, Ctrl+C"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Navigate to the declaration of the selected symbol.",
+      "id" : "vs-declaration",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "navigation"
+      ],
+      "title" : "Go to declaration",
+      "value" : "Ctrl+F12"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Navigate to the definition of the selected symbol.",
+      "id" : "vs-definition",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "navigation"
+      ],
+      "title" : "Go to definition",
+      "value" : "F12"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Remove every breakpoint in the solution.",
+      "id" : "vs-delete-breakpoints",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Delete all breakpoints",
+      "value" : "Ctrl+Shift+F9"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Search within the current document.",
+      "id" : "vs-find",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "search"
+      ],
+      "title" : "Find",
+      "value" : "Ctrl+F"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Search across files in the selected scope.",
+      "id" : "vs-find-files",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "search"
+      ],
+      "title" : "Find in files",
+      "value" : "Ctrl+Shift+F"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Move to the next search match.",
+      "id" : "vs-find-next",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "search"
+      ],
+      "title" : "Find next",
+      "value" : "F3"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Move to the previous search match.",
+      "id" : "vs-find-previous",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "search"
+      ],
+      "title" : "Find previous",
+      "value" : "Shift+F3"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Format the entire active document.",
+      "id" : "vs-format-document",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "format"
+      ],
+      "title" : "Format document",
+      "value" : "Ctrl+K, Ctrl+D"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Format the selected code.",
+      "id" : "vs-format-selection",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "format"
+      ],
+      "title" : "Format selection",
+      "value" : "Ctrl+K, Ctrl+F"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Search files, types, members, and symbols.",
+      "id" : "vs-navigate",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "navigation"
+      ],
+      "title" : "Go to All",
+      "value" : "Ctrl+,"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Open an existing file.",
+      "id" : "vs-open",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "file"
+      ],
+      "title" : "Open file",
+      "value" : "Ctrl+O"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Open the selected symbol's definition inline.",
+      "id" : "vs-peek",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "navigation"
+      ],
+      "title" : "Peek definition",
+      "value" : "Alt+F12"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Inspect the selected expression while debugging.",
+      "id" : "vs-quick-watch",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "QuickWatch",
+      "value" : "Shift+F9"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Find references to the selected symbol.",
+      "id" : "vs-references",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "navigation"
+      ],
+      "title" : "Find all references",
+      "value" : "Shift+F12"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Find and replace text in the current document.",
+      "id" : "vs-replace",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "search"
+      ],
+      "title" : "Replace",
+      "value" : "Ctrl+H"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Restart the current debugging session.",
+      "id" : "vs-restart-debug",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Restart debugging",
+      "value" : "Ctrl+Shift+F5"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Continue execution to the line under the cursor.",
+      "id" : "vs-run-to-cursor",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Run to cursor",
+      "value" : "Ctrl+F10"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Save the active document.",
+      "id" : "vs-save",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "file"
+      ],
+      "title" : "Save",
+      "value" : "Ctrl+S"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Save all modified files.",
+      "id" : "vs-save-all",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "file"
+      ],
+      "title" : "Save all",
+      "value" : "Ctrl+Shift+S"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Focus the Solution Explorer tool window.",
+      "id" : "vs-solution-explorer",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "tool window"
+      ],
+      "title" : "Open Solution Explorer",
+      "value" : "Ctrl+Alt+L"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Start the current project with the debugger.",
+      "id" : "vs-start-debug",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Start debugging",
+      "value" : "F5"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Run the current project without attaching the debugger.",
+      "id" : "vs-start-without-debug",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "run"
+      ],
+      "title" : "Start without debugging",
+      "value" : "Ctrl+F5"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Execute the current statement and enter called code.",
+      "id" : "vs-step-into",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Step into",
+      "value" : "F11"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Run until the current function returns.",
+      "id" : "vs-step-out",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Step out",
+      "value" : "Shift+F11"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Execute the current statement without entering calls.",
+      "id" : "vs-step-over",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Step over",
+      "value" : "F10"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Stop the current debugging session.",
+      "id" : "vs-stop-debug",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Stop debugging",
+      "value" : "Shift+F5"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Add or remove a breakpoint on the current line.",
+      "id" : "vs-toggle-breakpoint",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "debug"
+      ],
+      "title" : "Toggle breakpoint",
+      "value" : "F9"
+    },
+    {
+      "category" : "Visual Studio",
+      "confidence" : "verified",
+      "description" : "Uncomment the selected lines.",
+      "id" : "vs-uncomment",
+      "kind" : "shortcut",
+      "tags" : [
+        "Windows",
+        "General profile",
+        "editing"
+      ],
+      "title" : "Uncomment selection",
+      "value" : "Ctrl+K, Ctrl+U"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Select the closest bookmark below.",
+      "id" : "warp-bookmark-next",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Next bookmark",
+      "value" : "⌥ ↓"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Select the closest bookmark above.",
+      "id" : "warp-bookmark-prev",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Previous bookmark",
+      "value" : "⌥ ↑"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Clear terminal blocks.",
+      "id" : "warp-clear",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Clear blocks",
+      "value" : "⌘ K"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Copy output from the selected block.",
+      "id" : "warp-copy-output",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Copy command output",
+      "value" : "⌘ ⌥ ⇧ C"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Open shared Warp Drive resources.",
+      "id" : "warp-drive",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle Warp Drive",
+      "value" : "⌘ \\"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Open file search.",
+      "id" : "warp-file",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "File search",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Move focus to terminal input.",
+      "id" : "warp-focus",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Focus terminal input",
+      "value" : "⌘ L"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Open natural-language command generation.",
+      "id" : "warp-generate",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Generate command",
+      "value" : "⌃ `"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Open the launch configuration palette.",
+      "id" : "warp-launch",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Launch configurations",
+      "value" : "⌃ ⌘ L"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Open Warp's command palette.",
+      "id" : "warp-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command palette",
+      "value" : "⌘ P"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Search command history.",
+      "id" : "warp-search",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command search",
+      "value" : "⌃ R"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Select all terminal blocks.",
+      "id" : "warp-select-all",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Select all blocks",
+      "value" : "⌘ A"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Create a pane to the right.",
+      "id" : "warp-split",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Split pane right",
+      "value" : "⌘ D"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Open the theme picker.",
+      "id" : "warp-theme",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Theme picker",
+      "value" : "⌃ ⌘ T"
+    },
+    {
+      "category" : "Warp",
+      "confidence" : "verified",
+      "description" : "Browse saved workflows.",
+      "id" : "warp-workflows",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open workflows",
+      "value" : "⌃ ⇧ R"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Accept the current Supercomplete suggestion.",
+      "id" : "windsurf-accept",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Accept completion",
+      "value" : "Tab"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Open the Cascade assistant.",
+      "id" : "windsurf-cascade",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open Cascade",
+      "value" : "⌘ L"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Open Windsurf Command for inline generation.",
+      "id" : "windsurf-command",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command inline edit",
+      "value" : "⌘ I"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "common",
+      "description" : "Send selected code to Cascade.",
+      "id" : "windsurf-context",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Add code context",
+      "value" : "⌘ ⇧ L"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Dismiss the current suggestion.",
+      "id" : "windsurf-dismiss",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Dismiss completion",
+      "value" : "Esc"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Open a file by name.",
+      "id" : "windsurf-file",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Quick open",
+      "value" : "⌘ P"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Cycle Code, Plan, and Ask modes.",
+      "id" : "windsurf-mode",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Switch Cascade mode",
+      "value" : "⌘ ."
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Insert a new line in the prompt.",
+      "id" : "windsurf-newline",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Prompt newline",
+      "value" : "⇧ Enter"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Search and run editor commands.",
+      "id" : "windsurf-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command palette",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Search across the workspace.",
+      "id" : "windsurf-search",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Project search",
+      "value" : "⌘ ⇧ F"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Send a Cascade prompt.",
+      "id" : "windsurf-submit",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Submit prompt",
+      "value" : "Enter"
+    },
+    {
+      "category" : "Windsurf",
+      "confidence" : "verified",
+      "description" : "Show or hide the integrated terminal.",
+      "id" : "windsurf-terminal",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle terminal",
+      "value" : "⌃ `"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Add existing files to the current project.",
+      "id" : "xcode-add-files",
+      "kind" : "shortcut",
+      "tags" : [
+        "file"
+      ],
+      "title" : "Add files",
+      "value" : "⌘ ⌥ A"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Run static analysis for the active scheme.",
+      "id" : "xcode-analyze",
+      "kind" : "shortcut",
+      "tags" : [
+        "build",
+        "diagnostics"
+      ],
+      "title" : "Analyze",
+      "value" : "⌘ ⇧ B"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Enable or disable all breakpoints.",
+      "id" : "xcode-breakpoints",
+      "kind" : "shortcut",
+      "tags" : [
+        "debug"
+      ],
+      "title" : "Activate breakpoints",
+      "value" : "⌘ Y"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Build the active scheme.",
+      "id" : "xcode-build",
+      "kind" : "shortcut",
+      "tags" : [
+        "build"
+      ],
+      "title" : "Build",
+      "value" : "⌘ B"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Build DocC documentation for the project.",
+      "id" : "xcode-build-docs",
+      "kind" : "shortcut",
+      "tags" : [
+        "documentation"
+      ],
+      "title" : "Build documentation",
+      "value" : "⌘ ⌃ ⇧ D"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Find callers and callees of the selected symbol.",
+      "id" : "xcode-call-hierarchy",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation",
+        "symbol"
+      ],
+      "title" : "Find call hierarchy",
+      "value" : "⌘ ⌃ ⇧ H"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Remove build products for the active scheme.",
+      "id" : "xcode-clean",
+      "kind" : "shortcut",
+      "tags" : [
+        "build"
+      ],
+      "title" : "Clean build folder",
+      "value" : "⌘ ⇧ K"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Continue execution to the current source line.",
+      "id" : "xcode-continue-line",
+      "kind" : "shortcut",
+      "tags" : [
+        "debug"
+      ],
+      "title" : "Continue to current line",
+      "value" : "⌘ ⌃ C"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Navigate to the selected symbol's definition.",
+      "id" : "xcode-definition",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation",
+        "symbol"
+      ],
+      "title" : "Jump to definition",
+      "value" : "⌘ ⌃ J"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Find text in the active editor.",
+      "id" : "xcode-find",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Find",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Move to the next local search match.",
+      "id" : "xcode-find-next",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Find next",
+      "value" : "⌘ G"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Move to the previous local search match.",
+      "id" : "xcode-find-previous",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Find previous",
+      "value" : "⌘ ⇧ G"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Find the selected symbol across the workspace.",
+      "id" : "xcode-find-symbol",
+      "kind" : "shortcut",
+      "tags" : [
+        "search",
+        "symbol"
+      ],
+      "title" : "Find selected symbol",
+      "value" : "⌘ ⌃ ⇧ F"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Search across the current workspace.",
+      "id" : "xcode-find-workspace",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Find in workspace",
+      "value" : "⌘ ⇧ F"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Move keyboard focus to an editor pane.",
+      "id" : "xcode-focus-editor",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Move focus to editor pane",
+      "value" : "⌘ J"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Move forward through navigation history.",
+      "id" : "xcode-history-next",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Next location in history",
+      "value" : "⌘ ⌃ →"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Move backward through navigation history.",
+      "id" : "xcode-history-previous",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Previous location in history",
+      "value" : "⌘ ⌃ ←"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Move to the next build or analysis issue.",
+      "id" : "xcode-next-issue",
+      "kind" : "shortcut",
+      "tags" : [
+        "diagnostics"
+      ],
+      "title" : "Jump to next issue",
+      "value" : "⌘ '"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Open a project, workspace, or file.",
+      "id" : "xcode-open",
+      "kind" : "shortcut",
+      "tags" : [
+        "file"
+      ],
+      "title" : "Open",
+      "value" : "⌘ O"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Search and open project files and symbols.",
+      "id" : "xcode-open-quickly",
+      "kind" : "shortcut",
+      "tags" : [
+        "search",
+        "navigation"
+      ],
+      "title" : "Open Quickly",
+      "value" : "⌘ ⇧ O"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Pause or continue the current debugging session.",
+      "id" : "xcode-pause",
+      "kind" : "shortcut",
+      "tags" : [
+        "debug"
+      ],
+      "title" : "Pause or continue",
+      "value" : "⌘ ⌃ Y"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Move to the previous build or analysis issue.",
+      "id" : "xcode-previous-issue",
+      "kind" : "shortcut",
+      "tags" : [
+        "diagnostics"
+      ],
+      "title" : "Jump to previous issue",
+      "value" : "⌘ \""
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Build and profile the active scheme with Instruments.",
+      "id" : "xcode-profile",
+      "kind" : "shortcut",
+      "tags" : [
+        "profile"
+      ],
+      "title" : "Profile",
+      "value" : "⌘ I"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Find and replace text in the active editor.",
+      "id" : "xcode-replace",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Find and replace",
+      "value" : "⌘ ⌥ F"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Find and replace across the current workspace.",
+      "id" : "xcode-replace-workspace",
+      "kind" : "shortcut",
+      "tags" : [
+        "search"
+      ],
+      "title" : "Replace in workspace",
+      "value" : "⌘ ⌥ ⇧ F"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Reveal the active file in the Project navigator.",
+      "id" : "xcode-reveal-project",
+      "kind" : "shortcut",
+      "tags" : [
+        "navigation"
+      ],
+      "title" : "Reveal in Project Navigator",
+      "value" : "⌘ ⇧ J"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Build and run the active scheme.",
+      "id" : "xcode-run",
+      "kind" : "shortcut",
+      "tags" : [
+        "run"
+      ],
+      "title" : "Run",
+      "value" : "⌘ R"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Save the active document.",
+      "id" : "xcode-save",
+      "kind" : "shortcut",
+      "tags" : [
+        "file"
+      ],
+      "title" : "Save",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Save every modified document.",
+      "id" : "xcode-save-all",
+      "kind" : "shortcut",
+      "tags" : [
+        "file"
+      ],
+      "title" : "Save all",
+      "value" : "⌘ ⌥ S"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Execute the current line and enter called code.",
+      "id" : "xcode-step-into",
+      "kind" : "shortcut",
+      "tags" : [
+        "debug"
+      ],
+      "title" : "Step into",
+      "value" : "F7"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Continue until the current function returns.",
+      "id" : "xcode-step-out",
+      "kind" : "shortcut",
+      "tags" : [
+        "debug"
+      ],
+      "title" : "Step out",
+      "value" : "F8"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Execute the current line without entering calls.",
+      "id" : "xcode-step-over",
+      "kind" : "shortcut",
+      "tags" : [
+        "debug"
+      ],
+      "title" : "Step over",
+      "value" : "F6"
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Stop the active build, run, test, or profile operation.",
+      "id" : "xcode-stop",
+      "kind" : "shortcut",
+      "tags" : [
+        "run",
+        "debug"
+      ],
+      "title" : "Stop",
+      "value" : "⌘ ."
+    },
+    {
+      "category" : "Xcode",
+      "confidence" : "verified",
+      "description" : "Build and run tests for the active scheme.",
+      "id" : "xcode-test",
+      "kind" : "shortcut",
+      "tags" : [
+        "test"
+      ],
+      "title" : "Test",
+      "value" : "⌘ U"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Close the active item.",
+      "id" : "zed-close",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Close item",
+      "value" : "⌘ W"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Navigate to a symbol definition.",
+      "id" : "zed-definition",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Go to definition",
+      "value" : "F12"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Move to the next diagnostic.",
+      "id" : "zed-diagnostics",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Next diagnostic",
+      "value" : "F8"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Open a file by name.",
+      "id" : "zed-file",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Go to file",
+      "value" : "⌘ P"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Find text in the active buffer.",
+      "id" : "zed-find",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Find in buffer",
+      "value" : "⌘ F"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Create a new buffer.",
+      "id" : "zed-new",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New file",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Search and run Zed actions.",
+      "id" : "zed-palette",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Command palette",
+      "value" : "⌘ ⇧ P"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Search text across the project.",
+      "id" : "zed-project-search",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Search project",
+      "value" : "⌘ ⇧ F"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Rename the symbol under the cursor.",
+      "id" : "zed-rename",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Rename symbol",
+      "value" : "F2"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Open find and replace.",
+      "id" : "zed-replace",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Replace in buffer",
+      "value" : "⌘ ⌥ F"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Save the current buffer.",
+      "id" : "zed-save",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Save",
+      "value" : "⌘ S"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Open Zed settings.",
+      "id" : "zed-settings",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open settings",
+      "value" : "⌘ ,"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Split the workspace pane to the right.",
+      "id" : "zed-split",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Split pane",
+      "value" : "⌘ K →"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Navigate to a symbol in the current file.",
+      "id" : "zed-symbol",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Go to symbol",
+      "value" : "⌘ ⇧ O"
+    },
+    {
+      "category" : "Zed",
+      "confidence" : "verified",
+      "description" : "Show or hide the integrated terminal.",
+      "id" : "zed-terminal",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle terminal",
+      "value" : "⌃ `"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "verified",
+      "description" : "Stop or dismiss the current Agent action.",
+      "id" : "zed-agent-cancel",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Cancel generation",
+      "value" : "Esc"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "verified",
+      "description" : "Open slash-command completion in an Agent prompt.",
+      "id" : "zed-agent-command",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Open commands",
+      "value" : "/"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "verified",
+      "description" : "Open the context picker in an Agent prompt.",
+      "id" : "zed-agent-context",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Add context",
+      "value" : "@"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "common",
+      "description" : "Open Agent thread history.",
+      "id" : "zed-agent-history",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Thread history",
+      "value" : "⌘ ⇧ H"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "common",
+      "description" : "Open inline assistant for the selection.",
+      "id" : "zed-agent-inline",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Inline assist",
+      "value" : "⌃ Enter"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "common",
+      "description" : "Create a thread while the Agent panel is focused.",
+      "id" : "zed-agent-new",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "New thread",
+      "value" : "⌘ N"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "verified",
+      "description" : "Add a line without submitting.",
+      "id" : "zed-agent-newline",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Insert newline",
+      "value" : "⇧ Enter"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "common",
+      "description" : "Open or close the Agent panel.",
+      "id" : "zed-agent-panel",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Toggle Agent panel",
+      "value" : "⌘ ?"
+    },
+    {
+      "category" : "Zed Agent",
+      "confidence" : "verified",
+      "description" : "Send the current Agent prompt.",
+      "id" : "zed-agent-submit",
+      "kind" : "shortcut",
+      "tags" : [
+
+      ],
+      "title" : "Submit prompt",
+      "value" : "Enter"
+    }
+  ],
+  "sourceRepository" : "https://github.com/Saba-Burduli/keytome-macos",
+  "sourceRevision" : "18f7c580ad1581307e4443264ab4e3dfb2115bcf",
+  "totalShortcuts" : 453
+}
