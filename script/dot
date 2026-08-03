@@ -257,12 +257,14 @@ cmd_bootstrap() {
 
 cmd_update() {
   if [[ "$DRY_RUN" -eq 1 ]]; then
-    say 'dry-run' 'git pull --ff-only; dot link; dot runtimes; dot plugins'
+    say 'dry-run' 'git pull --ff-only; dot link; dot sync --to-machine; dot runtimes; dot plugins'
     return
   fi
   confirm 'Fast-forward this repository and reapply managed state?' || { say 'skip' 'update declined'; return; }
   git -C "$DOTFILES_DIR" pull --ff-only
   cmd_link
+  SYNC_DIRECTION=--to-machine
+  cmd_sync
   cmd_runtimes
   cmd_plugins
 }
