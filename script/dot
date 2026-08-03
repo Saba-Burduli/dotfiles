@@ -227,7 +227,7 @@ cmd_doctor() {
   if command -v mise >/dev/null 2>&1; then
     while IFS='=' read -r runtime expected; do
       [[ -z "$runtime" || "${runtime:0:1}" == '#' ]] && continue
-      actual="$(mise current "$runtime" 2>/dev/null | awk '{print $2}' || true)"
+      actual="$(mise --cd "$DOTFILES_DIR" current "$runtime" 2>/dev/null | tail -n 1 || true)"
       if [[ "$actual" == "$expected" ]]; then say 'ok' "$runtime $expected"; else say 'drift' "$runtime expected $expected (found ${actual:-missing})"; problems=1; fi
     done < <(awk '/^(node|python|go|dotnet) = / { gsub(/[" ]/, "", $3); print $1 "=" $3 }' "$DOTFILES_DIR/mise.toml")
   fi
