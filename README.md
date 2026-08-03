@@ -7,7 +7,7 @@ Portable macOS development preferences, shell configuration, Git defaults, packa
 ```text
 .
 ├── git/          Git defaults, aliases, and global ignores
-├── keybindings/  453 shortcuts for 25 applications and tools
+├── keybindings/  224 shortcuts for 13 applications and tools
 ├── script/       Safe, repeatable setup commands
 ├── zsh/          Shell preferences and aliases
 ├── Brewfile      Developer command-line packages
