@@ -20,6 +20,7 @@ for manifest in "$DOTFILES_DIR"/manifest/*.tsv; do
 done
 
 ruby -c "$DOTFILES_DIR/Brewfile" >/dev/null
+ruby -c "$DOTFILES_DIR/Formula/saba-dotfiles.rb" >/dev/null
 
 while IFS=$'\t' read -r source relative_target; do
   [[ -z "$source" || "${source:0:1}" == '#' ]] && continue

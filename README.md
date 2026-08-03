@@ -2,7 +2,28 @@
 
 Reproducible, public macOS developer preferences. The repository is organized by topic: directly managed files use the familiar `.symlink` convention, while `dot` provides a single safe setup interface.
 
-## Fresh-Mac setup
+## Install as a package
+
+The repository includes a Homebrew tap formula named `saba-dotfiles`. It installs
+the `dot` command and keeps managed links pointed at Homebrew's stable `opt`
+path, so `brew upgrade` does not leave broken symlinks.
+
+```bash
+brew tap Saba-Burduli/dotfiles
+brew install saba-dotfiles
+dot bootstrap --dry-run
+dot bootstrap --yes
+```
+
+Use a normal clone when you plan to edit settings or run `dot sync --from-machine`:
+
+```bash
+git clone https://github.com/Saba-Burduli/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+./script/dot sync --from-machine --yes
+```
+
+## Fresh-Mac setup from a clone
 
 ```bash
 git clone https://github.com/Saba-Burduli/dotfiles.git ~/.dotfiles

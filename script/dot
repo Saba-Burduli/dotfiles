@@ -3,7 +3,9 @@
 # A small, safe management command for this macOS-only dotfiles repository.
 set -euo pipefail
 
-DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# Homebrew's wrapper sets DOTFILES_DIR to its stable opt path. Source checkouts
+# use the directory containing this script by default.
+DOTFILES_DIR="${DOTFILES_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 MANIFEST_DIR="$DOTFILES_DIR/manifest"
 DRY_RUN=0
 ASSUME_YES=0
