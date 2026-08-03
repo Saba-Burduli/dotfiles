@@ -131,7 +131,7 @@ cmd_runtimes() {
   if [[ "$DRY_RUN" -eq 0 ]]; then
     confirm 'Install the exact runtimes in mise.toml?' || { say 'skip' 'runtime installation declined'; return; }
   fi
-  run mise install --config "$DOTFILES_DIR/mise.toml"
+  run mise --cd "$DOTFILES_DIR" install
 }
 
 cmd_plugins() {
