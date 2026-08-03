@@ -4,7 +4,25 @@ set -euo pipefail
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-bash -n "$DOTFILES_DIR/script/bootstrap"
+bash -n "$DOTFILES_DIR/script/bootstrap" "$DOTFILES_DIR/script/dot"
+
+for manifest in "$DOTFILES_DIR"/manifest/*.tsv; do
+  awk -F '\t' 'NF && $1 !~ /^#/ && NF != 2 { exit 1 }' "$manifest" || {
+    printf 'Invalid manifest: %s\n' "$manifest" >&2
+    exit 1
+  }
+done
+
+for pin in 'node = "26.5.0"' 'python = "3.14.6"' 'go = "1.26.2"' 'dotnet = "10.0.203"'; do
+  rg -Fqx "$pin" "$DOTFILES_DIR/mise.toml" || {
+    printf 'Missing mise pin: %s\n' "$pin" >&2
+    exit 1
+  }
+done
+
+rg -Fqx 'brew "mise"' "$DOTFILES_DIR/Brewfile"
+rg -Fqx 'brew "shellcheck"' "$DOTFILES_DIR/Brewfile"
+rg -Fqx 'brew "gitleaks"' "$DOTFILES_DIR/Brewfile"
 
 app_count="$({ find "$DOTFILES_DIR/keybindings" -maxdepth 1 -type f -name '*.md' ! -name README.md; } | wc -l | tr -d ' ')"
 binding_count="$(awk '/^\| `.*` \|/ { count++ } END { print count + 0 }' "$DOTFILES_DIR"/keybindings/*.md)"

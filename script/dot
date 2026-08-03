@@ -1,0 +1,281 @@
+#!/usr/bin/env bash
+
+# A small, safe management command for this macOS-only dotfiles repository.
+set -euo pipefail
+
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+MANIFEST_DIR="$DOTFILES_DIR/manifest"
+DRY_RUN=0
+ASSUME_YES=0
+COMMAND=""
+SYNC_DIRECTION=""
+BACKUP_DIR="${DOTFILES_BACKUP_DIR:-$HOME/.dotfiles-backup/$(date +%Y%m%d-%H%M%S)}"
+
+usage() {
+  cat <<'USAGE'
+Usage: dot <command> [options]
+
+Commands:
+  bootstrap  Preflight, packages, runtimes, links, and plugins.
+  link       Link managed files and back up replaced targets.
+  packages   Install the declared Homebrew bundle.
+  runtimes   Install the pinned mise runtimes.
+  plugins    Restore declared Cursor extensions and Codex plugins.
+  sync       Synchronize only allowlisted generated app settings.
+  macos      Preview (or explicitly apply) reviewed macOS preferences.
+  doctor     Report configuration, package, runtime, and auth status.
+  update     Fast-forward this repository and reapply managed state.
+
+Options:
+  --dry-run       Print actions without writing files or invoking installers.
+  --yes           Approve installer, sync, and macOS actions without prompting.
+  --from-machine  Read allowlisted settings into this repository (sync only).
+  --to-machine    Restore allowlisted settings from this repository (sync only).
+  -h, --help      Show this help.
+USAGE
+}
+
+say() { printf '%-8s %s\n' "$1" "$2"; }
+fail() { printf 'error: %s\n' "$*" >&2; exit 1; }
+
+run() {
+  if [[ "$DRY_RUN" -eq 1 ]]; then
+    say 'dry-run' "$(printf '%q ' "$@")"
+  else
+    "$@"
+  fi
+}
+
+confirm() {
+  local message="$1"
+  if [[ "$DRY_RUN" -eq 1 || "$ASSUME_YES" -eq 1 ]]; then
+    return 0
+  fi
+  if [[ ! -t 0 ]]; then
+    fail "$message (rerun with --yes)"
+  fi
+  local answer
+  read -r -p "$message [y/N] " answer
+  [[ "$answer" =~ ^[Yy]([Ee][Ss])?$ ]]
+}
+
+backup_target() {
+  local target="$1"
+  local relative="${target#$HOME/}"
+  local backup="$BACKUP_DIR/$relative"
+  say 'backup' "$target -> $backup"
+  if [[ "$DRY_RUN" -eq 0 ]]; then
+    mkdir -p "$(dirname "$backup")"
+    mv "$target" "$backup"
+  fi
+}
+
+link_item() {
+  local source="$1"
+  local target="$2"
+  [[ -e "$source" || -L "$source" ]] || fail "managed source is missing: $source"
+
+  if [[ -L "$target" && "$(readlink "$target")" == "$source" ]]; then
+    say 'ok' "$target"
+    return
+  fi
+  if [[ -e "$target" || -L "$target" ]]; then
+    backup_target "$target"
+  fi
+  say 'link' "$target -> $source"
+  if [[ "$DRY_RUN" -eq 0 ]]; then
+    mkdir -p "$(dirname "$target")"
+    ln -s "$source" "$target"
+  fi
+}
+
+cmd_link() {
+  while IFS=$'\t' read -r source relative_target; do
+    [[ -z "$source" || "${source:0:1}" == '#' ]] && continue
+    link_item "$DOTFILES_DIR/$source" "$HOME/$relative_target"
+  done < "$MANIFEST_DIR/links.tsv"
+}
+
+brew_bin() {
+  command -v brew || true
+}
+
+cmd_packages() {
+  local brew
+  brew="$(brew_bin)"
+  if [[ -z "$brew" ]]; then
+    if [[ "$DRY_RUN" -eq 1 ]]; then
+      say 'dry-run' 'install Homebrew from https://brew.sh'
+      return
+    fi
+    confirm 'Homebrew is not installed. Install it?' || { say 'skip' 'Homebrew installation declined'; return; }
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew="$(brew_bin)"
+    [[ -n "$brew" ]] || fail 'Homebrew installation did not put brew on PATH; restart the shell and retry'
+  fi
+  if [[ "$DRY_RUN" -eq 0 ]]; then
+    confirm 'Install or update packages declared in Brewfile?' || { say 'skip' 'package installation declined'; return; }
+  fi
+  run "$brew" bundle --file "$DOTFILES_DIR/Brewfile"
+}
+
+cmd_runtimes() {
+  if ! command -v mise >/dev/null 2>&1; then
+    if [[ "$DRY_RUN" -eq 1 ]]; then
+      say 'dry-run' 'brew install mise'
+      return
+    fi
+    confirm 'mise is not installed. Install it with Homebrew?' || { say 'skip' 'mise installation declined'; return; }
+    run "$(brew_bin)" install mise
+  fi
+  if [[ "$DRY_RUN" -eq 0 ]]; then
+    confirm 'Install the exact runtimes in mise.toml?' || { say 'skip' 'runtime installation declined'; return; }
+  fi
+  run mise install --config "$DOTFILES_DIR/mise.toml"
+}
+
+cmd_plugins() {
+  local extension state plugin
+  while IFS=$'\t' read -r extension state; do
+    [[ -z "$extension" || "${extension:0:1}" == '#' ]] && continue
+    if command -v cursor >/dev/null 2>&1; then
+      run cursor --install-extension "$extension"
+    else
+      say 'manual' "install Cursor extension: $extension"
+    fi
+  done < "$MANIFEST_DIR/cursor-extensions.tsv"
+
+  while IFS=$'\t' read -r plugin state; do
+    [[ -z "$plugin" || "${plugin:0:1}" == '#' ]] && continue
+    if command -v codex >/dev/null 2>&1; then
+      run codex plugin add "$plugin"
+      # Enabled state is declared in config/codex/config.toml; `add` only restores
+      # the plugin payload from its configured marketplace.
+    else
+      say 'manual' "install Codex plugin: $plugin ($state)"
+    fi
+  done < "$MANIFEST_DIR/codex-plugins.tsv"
+}
+
+copy_item() {
+  local source="$1"
+  local target="$2"
+  [[ -e "$source" ]] || { say 'skip' "missing $source"; return; }
+  if [[ -e "$target" ]]; then
+    backup_target "$target"
+  fi
+  say 'copy' "$source -> $target"
+  if [[ "$DRY_RUN" -eq 0 ]]; then
+    mkdir -p "$(dirname "$target")"
+    cp "$source" "$target"
+  fi
+}
+
+cmd_sync() {
+  [[ -n "$SYNC_DIRECTION" ]] || fail 'sync requires --from-machine or --to-machine'
+  if [[ "$DRY_RUN" -eq 0 ]]; then
+    confirm "Synchronize allowlisted settings $SYNC_DIRECTION?" || { say 'skip' 'sync declined'; return; }
+  fi
+  while IFS=$'\t' read -r repository_path home_path; do
+    [[ -z "$repository_path" || "${repository_path:0:1}" == '#' ]] && continue
+    if [[ "$SYNC_DIRECTION" == '--from-machine' ]]; then
+      copy_item "$HOME/$home_path" "$DOTFILES_DIR/$repository_path"
+    else
+      copy_item "$DOTFILES_DIR/$repository_path" "$HOME/$home_path"
+    fi
+  done < "$MANIFEST_DIR/sync.tsv"
+}
+
+cmd_macos() {
+  if [[ "$ASSUME_YES" -eq 1 ]]; then
+    run "$DOTFILES_DIR/script/macos" --yes
+  else
+    run "$DOTFILES_DIR/script/macos"
+  fi
+}
+
+check_command() {
+  local command="$1"
+  if command -v "$command" >/dev/null 2>&1; then say 'ok' "$command"; else say 'missing' "$command"; return 1; fi
+}
+
+cmd_doctor() {
+  local problems=0 source relative_target tool runtime expected actual
+  for tool in git gh mise shellcheck gitleaks; do check_command "$tool" || problems=1; done
+  while IFS=$'\t' read -r source relative_target; do
+    [[ -z "$source" || "${source:0:1}" == '#' ]] && continue
+    if [[ -L "$HOME/$relative_target" && "$(readlink "$HOME/$relative_target")" == "$DOTFILES_DIR/$source" ]]; then
+      say 'ok' "link $relative_target"
+    else
+      say 'drift' "link $relative_target (run: dot link)"; problems=1
+    fi
+  done < "$MANIFEST_DIR/links.tsv"
+  if command -v mise >/dev/null 2>&1; then
+    while IFS='=' read -r runtime expected; do
+      [[ -z "$runtime" || "${runtime:0:1}" == '#' ]] && continue
+      actual="$(mise current "$runtime" 2>/dev/null | awk '{print $2}' || true)"
+      if [[ "$actual" == "$expected" ]]; then say 'ok' "$runtime $expected"; else say 'drift' "$runtime expected $expected (found ${actual:-missing})"; problems=1; fi
+    done < <(awk '/^(node|python|go|dotnet) = / { gsub(/[" ]/, "", $3); print $1 "=" $3 }' "$DOTFILES_DIR/mise.toml")
+  fi
+  if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then say 'ok' 'GitHub CLI authentication'; else say 'action' 'run: gh auth login'; problems=1; fi
+  if command -v codex >/dev/null 2>&1; then say 'action' 'authenticate Codex if prompted; credentials remain in Keychain'; fi
+  [[ "$problems" -eq 0 ]] && return 0
+  return 1
+}
+
+cmd_preflight() {
+  [[ "$(uname -s)" == 'Darwin' ]] || fail 'this repository supports macOS only'
+  say 'ok' "macOS $(sw_vers -productVersion 2>/dev/null || echo unknown)"
+  say 'ok' "repository $DOTFILES_DIR"
+}
+
+cmd_bootstrap() {
+  cmd_preflight
+  cmd_packages
+  cmd_runtimes
+  cmd_link
+  cmd_plugins
+  say 'next' 'review `dot macos` before applying macOS defaults'
+  say 'next' 'run `dot doctor` after restarting affected applications'
+}
+
+cmd_update() {
+  if [[ "$DRY_RUN" -eq 1 ]]; then
+    say 'dry-run' 'git pull --ff-only; dot link; dot runtimes; dot plugins'
+    return
+  fi
+  confirm 'Fast-forward this repository and reapply managed state?' || { say 'skip' 'update declined'; return; }
+  git -C "$DOTFILES_DIR" pull --ff-only
+  cmd_link
+  cmd_runtimes
+  cmd_plugins
+}
+
+[[ $# -gt 0 ]] || { usage; exit 2; }
+COMMAND="$1"; shift
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --dry-run) DRY_RUN=1 ;;
+    --yes) ASSUME_YES=1 ;;
+    --from-machine|--to-machine)
+      [[ -z "$SYNC_DIRECTION" ]] || fail 'choose only one sync direction'
+      SYNC_DIRECTION="$1" ;;
+    -h|--help) usage; exit 0 ;;
+    *) fail "unknown option: $1" ;;
+  esac
+  shift
+done
+
+case "$COMMAND" in
+  bootstrap) cmd_bootstrap ;;
+  link) cmd_link ;;
+  packages) cmd_packages ;;
+  runtimes) cmd_runtimes ;;
+  plugins) cmd_plugins ;;
+  sync) cmd_sync ;;
+  macos) cmd_macos ;;
+  doctor) cmd_doctor ;;
+  update) cmd_update ;;
+  help) usage ;;
+  *) fail "unknown command: $COMMAND" ;;
+esac

@@ -1,0 +1,5 @@
+# repository path<TAB>path relative to HOME
+git/gitconfig.symlink	.gitconfig
+git/gitignore.symlink	.gitignore_global
+zsh/zshrc.symlink	.zshrc
+keybindings	.config/keybindings
