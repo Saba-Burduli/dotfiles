@@ -1,0 +1,39 @@
+{
+  "name": "@saba-burduli/dotfiles",
+  "version": "0.1.0",
+  "description": "Reproducible macOS developer dotfiles and the dot management command",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "dot": "bin/dot"
+  },
+  "files": [
+    "bin",
+    "config",
+    "git",
+    "keybindings",
+    "manifest",
+    "script",
+    "ssh",
+    "zsh",
+    "Brewfile",
+    "mise.toml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "./script/check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saba-Burduli/dotfiles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Saba-Burduli/dotfiles/issues"
+  },
+  "homepage": "https://github.com/Saba-Burduli/dotfiles#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  }
+}

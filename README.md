@@ -15,6 +15,16 @@ dot bootstrap --dry-run
 dot bootstrap --yes
 ```
 
+It is also published to GitHub Packages as `@saba-burduli/dotfiles`:
+
+```bash
+npm install --global @saba-burduli/dotfiles --registry=https://npm.pkg.github.com
+dot bootstrap --dry-run
+```
+
+The package contains the same portable configuration and `dot` command. The
+first `v*` tag publishes its matching package version through GitHub Actions.
+
 Use a normal clone when you plan to edit settings or run `dot sync --from-machine`:
 
 ```bash

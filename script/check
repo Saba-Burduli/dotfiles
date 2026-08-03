@@ -21,6 +21,8 @@ done
 
 ruby -c "$DOTFILES_DIR/Brewfile" >/dev/null
 ruby -c "$DOTFILES_DIR/Formula/saba-dotfiles.rb" >/dev/null
+ruby -rjson -e 'package = JSON.parse(File.read(ARGV.fetch(0))); abort "wrong package name" unless package.fetch("name") == "@saba-burduli/dotfiles"; abort "wrong bin" unless package.fetch("bin").fetch("dot") == "bin/dot"' "$DOTFILES_DIR/package.json"
+[[ -x "$DOTFILES_DIR/bin/dot" ]] || { printf 'Package executable is not executable.\n' >&2; exit 1; }
 
 while IFS=$'\t' read -r source relative_target; do
   [[ -z "$source" || "${source:0:1}" == '#' ]] && continue
