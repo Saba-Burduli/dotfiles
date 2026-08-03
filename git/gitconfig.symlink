@@ -1,0 +1,29 @@
+[include]
+    path = ~/.gitconfig.local
+
+[init]
+    defaultBranch = main
+
+[pull]
+    ff = only
+
+[fetch]
+    prune = true
+
+[push]
+    autoSetupRemote = true
+
+[color]
+    ui = auto
+
+[core]
+    excludesfile = ~/.gitignore_global
+
+[alias]
+    amend = commit --amend --no-edit
+    branches = branch --sort=-committerdate
+    last = log -1 --stat
+    lg = log --graph --decorate --oneline --all
+    root = rev-parse --show-toplevel
+    staged = diff --cached
+    st = status --short --branch

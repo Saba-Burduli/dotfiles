@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+bash -n "$DOTFILES_DIR/script/bootstrap"
+
+app_count="$({ find "$DOTFILES_DIR/keybindings" -maxdepth 1 -type f -name '*.md' ! -name README.md; } | wc -l | tr -d ' ')"
+binding_count="$(awk '/^\| `.*` \|/ { count++ } END { print count + 0 }' "$DOTFILES_DIR"/keybindings/*.md)"
+
+if [[ "$app_count" -ne 25 ]]; then
+  printf 'Expected 25 application files, found %s.\n' "$app_count" >&2
+  exit 1
+fi
+
+if [[ "$binding_count" -ne 453 ]]; then
+  printf 'Expected 453 keybindings, found %s.\n' "$binding_count" >&2
+  exit 1
+fi
+
+printf 'Validated %s keybindings across %s application files.\n' "$binding_count" "$app_count"

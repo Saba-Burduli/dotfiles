@@ -1,46 +1,70 @@
 # dotfiles
 
-Portable reference material extracted from [Keytome for macOS](https://github.com/Saba-Burduli/keytome-macos).
+Portable macOS development preferences, shell configuration, Git defaults, package declarations, and application keybindings.
 
-## Keytome summary
+## What's included
 
-Keytome is a native Swift 6 macOS app for browsing keyboard shortcuts and command references entirely offline. Its bundled packs cover macOS, browsers, terminals, editors, AI coding tools, note-taking software, and game-development tools. The app uses typed seed data, keyboard-first navigation, search, copy-to-clipboard actions, confidence labels, and per-pack visual themes. It targets macOS 14 or newer and ships without accounts, analytics, a backend, or a network dependency.
-
-## Filtered shortcut catalog
-
-This repository deliberately contains only Keytome records whose type is `shortcut`. Shell commands, CLI invocations, slash commands, configuration keys, and other records whose type is `command` are excluded.
-
-- [`SHORTCUTS.md`](SHORTCUTS.md) is the human-readable catalog grouped by application or tool.
-- [`data/shortcuts.json`](data/shortcuts.json) is the machine-readable catalog with IDs, descriptions, tags, and confidence levels.
-- [`scripts/export_keytome_shortcuts.swift`](scripts/export_keytome_shortcuts.swift) regenerates both catalogs from a local Keytome checkout.
-- [`scripts/verify_shortcuts.py`](scripts/verify_shortcuts.py) validates the generated data and Markdown summary.
-
-## Regenerate
-
-From this repository, with Keytome checked out next to it:
-
-```bash
-KEYTOME_REPO=../keytome-macos
-SOURCE_REVISION="$(git -C "$KEYTOME_REPO" rev-parse HEAD)"
-
-swiftc \
-  "$KEYTOME_REPO/Sources/Keytome/Models/ReferenceCategory.swift" \
-  "$KEYTOME_REPO/Sources/Keytome/Models/ReferenceItem.swift" \
-  "$KEYTOME_REPO/Sources/Keytome/Data/SeedData.swift" \
-  "$KEYTOME_REPO/Sources/Keytome/Data/ExtendedSeedData.swift" \
-  scripts/export_keytome_shortcuts.swift \
-  -o /tmp/keytome-shortcut-export
-
-/tmp/keytome-shortcut-export \
-  --source-revision "$SOURCE_REVISION" \
-  --json data/shortcuts.json \
-  --markdown SHORTCUTS.md
-
-python3 scripts/verify_shortcuts.py
+```text
+.
+├── git/          Git defaults, aliases, and global ignores
+├── keybindings/  453 shortcuts for 25 applications and tools
+├── script/       Safe, repeatable setup commands
+├── zsh/          Shell preferences and aliases
+├── Brewfile      Developer command-line packages
+└── .editorconfig Shared editor formatting defaults
 ```
 
-The generated files are deterministic for a given Keytome revision.
+The repository is organized by topic. Files ending in `.symlink` are linked into the home directory by the bootstrap script. Existing files are moved to a timestamped backup directory before any link is created.
 
-## Source and rights
+## Install
 
-The catalog records originate in Keytome and retain their source revision in each generated artifact. See [`NOTICE`](NOTICE) for the applicable rights notice.
+Clone the repository and preview the changes:
+
+```bash
+git clone https://github.com/Saba-Burduli/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+script/bootstrap --dry-run
+```
+
+Apply the links after reviewing the preview:
+
+```bash
+script/bootstrap
+```
+
+The script links:
+
+- `git/gitconfig.symlink` to `~/.gitconfig`
+- `git/gitignore.symlink` to `~/.gitignore_global`
+- `zsh/zshrc.symlink` to `~/.zshrc`
+- `keybindings/` to `~/.config/keybindings`
+
+## Personal settings and secrets
+
+Machine-specific Git identity belongs in `~/.gitconfig.local`, outside the repository:
+
+```gitconfig
+[user]
+    name = Your Name
+    email = you@example.com
+```
+
+Machine-specific shell settings and secrets belong in `~/.zshrc.local`. Both `*.local` and `.env*` files are ignored so credentials are not accidentally committed.
+
+## Packages
+
+Review [`Brewfile`](Brewfile), then install its packages explicitly:
+
+```bash
+brew bundle --file ~/.dotfiles/Brewfile
+```
+
+Package installation is intentionally separate from bootstrap.
+
+## Application keybindings
+
+Browse the complete catalog in [`keybindings/`](keybindings/README.md). Each application has a standalone Markdown file that can be searched from the terminal or opened directly in an editor.
+
+```bash
+rg -i "rename|terminal|search" ~/.config/keybindings
+```
