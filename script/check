@@ -13,6 +13,16 @@ for manifest in "$DOTFILES_DIR"/manifest/*.tsv; do
   }
 done
 
+while IFS=$'\t' read -r source relative_target; do
+  [[ -z "$source" || "${source:0:1}" == '#' ]] && continue
+  [[ -e "$DOTFILES_DIR/$source" ]] || { printf 'Missing managed source: %s\n' "$source" >&2; exit 1; }
+done < "$DOTFILES_DIR/manifest/links.tsv"
+
+if rg -n -i '(auth\.json|hosts\.yml|ghp_|sk-[a-z0-9]{16}|authorization[[:space:]]*=|api[_-]?key[[:space:]]*=|password[[:space:]]*=|private[ _-]?key)' "$DOTFILES_DIR/config"; then
+  printf 'Potential secret or excluded state found in config/.\n' >&2
+  exit 1
+fi
+
 for pin in 'node = "26.5.0"' 'python = "3.14.6"' 'go = "1.26.2"' 'dotnet = "10.0.203"'; do
   rg -Fqx "$pin" "$DOTFILES_DIR/mise.toml" || {
     printf 'Missing mise pin: %s\n' "$pin" >&2

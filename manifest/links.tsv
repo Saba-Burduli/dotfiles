@@ -3,3 +3,11 @@ git/gitconfig.symlink	.gitconfig
 git/gitignore.symlink	.gitignore_global
 zsh/zshrc.symlink	.zshrc
 keybindings	.config/keybindings
+ssh/config	.ssh/config
+config/ghostty/config	.config/ghostty/config
+config/zed/settings.json	.config/zed/settings.json
+config/cursor/settings.json	Library/Application Support/Cursor/User/settings.json
+config/cursor/snippets	Library/Application Support/Cursor/User/snippets
+config/gh/config.yml	.config/gh/config.yml
+config/codex/config.toml	.codex/config.toml
+config/codex/AGENTS.md	.codex/AGENTS.md

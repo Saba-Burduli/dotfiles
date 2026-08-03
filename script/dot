@@ -136,6 +136,9 @@ cmd_runtimes() {
 
 cmd_plugins() {
   local extension state plugin
+  if [[ "$DRY_RUN" -eq 0 ]]; then
+    confirm 'Restore declared Cursor extensions and Codex plugins?' || { say 'skip' 'plugin restoration declined'; return; }
+  fi
   while IFS=$'\t' read -r extension state; do
     [[ -z "$extension" || "${extension:0:1}" == '#' ]] && continue
     if command -v cursor >/dev/null 2>&1; then

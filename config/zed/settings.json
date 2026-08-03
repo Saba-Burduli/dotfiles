@@ -1,0 +1,26 @@
+// Zed settings kept intentionally free of account and workspace state.
+{
+  "project_panel": { "dock": "right" },
+  "outline_panel": { "dock": "right" },
+  "collaboration_panel": { "dock": "right" },
+  "git_panel": { "dock": "right" },
+  "agent": {
+    "dock": "left",
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "enable_thinking": true,
+      "effort": "high"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Gruvbox Dark Hard"
+  }
+}

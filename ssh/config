@@ -1,0 +1,9 @@
+# Keep hosts, proxies, and identity choices outside this public repository.
+Include ~/.ssh/config.local
+
+# Colima creates this file locally when its SSH forwarding is enabled.
+Include ~/.colima/ssh_config
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
